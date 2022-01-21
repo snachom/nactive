@@ -1,0 +1,12 @@
+.search-name, .loader {
+  text-align: center;
+}
+
+.card-grid {
+  display: flex;
+  flex-flow: row wrap;
+  /* flex-flow: column wrap; */
+  width: 100%;
+  justify-content: center;
+
+}
