@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "./static/css/main.27a78d31.css",
-    "main.js": "./static/js/main.13810aa5.js",
-    "index.html": "./index.html",
-    "main.27a78d31.css.map": "./static/css/main.27a78d31.css.map",
-    "main.13810aa5.js.map": "./static/js/main.13810aa5.js.map"
+    "main.css": "/react-gifApp/static/css/main.27a78d31.css",
+    "main.js": "/react-gifApp/static/js/main.13810aa5.js",
+    "index.html": "/react-gifApp/index.html",
+    "main.27a78d31.css.map": "/react-gifApp/static/css/main.27a78d31.css.map",
+    "main.13810aa5.js.map": "/react-gifApp/static/js/main.13810aa5.js.map"
   },
   "entrypoints": [
     "static/css/main.27a78d31.css",
