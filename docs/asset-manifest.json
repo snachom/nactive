@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.27a78d31.css",
-    "main.js": "/static/js/main.13810aa5.js",
+    "main.css": "./static/css/main.27a78d31.css",
+    "main.js": "./static/js/main.13810aa5.js",
     "index.html": "./index.html",
     "main.27a78d31.css.map": "./static/css/main.27a78d31.css.map",
     "main.13810aa5.js.map": "./static/js/main.13810aa5.js.map"
