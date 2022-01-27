@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import { AddCategory } from './components/AddCategory';
-import { GifGrid } from './components/GifGrid';
+import { AddCategory } from './AddCategory';
+import { GifGrid } from './GifGrid';
 
 import './gif-expert.css'
 
-export const GifExpertApp = () => {
+// export const GifExpertApp = ({ defaultCategories = ['Charlie Brown'] }) => {
+export const GifExpertApp = ({ defaultCategories = ['Charlie Brown'] }) => {
 
-  const [categories, setCategories] = useState([ 'Charlie Brown' ]);
+  // const [categories, setCategories] = useState([ 'Charlie Brown' ]);
+  const [categories, setCategories] = useState(defaultCategories);
 
   return ( 
     <>
