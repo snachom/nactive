@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "./reactiveApp/static/css/main.343b45e5.css",
-    "main.js": "./reactiveApp/static/js/main.fc7433ae.js",
-    "index.html": "./reactiveApp/index.html",
-    "main.343b45e5.css.map": "./reactiveApp/static/css/main.343b45e5.css.map",
-    "main.fc7433ae.js.map": "./reactiveApp/static/js/main.fc7433ae.js.map"
+    "main.css": "./static/css/main.343b45e5.css",
+    "main.js": "./static/js/main.fc7433ae.js",
+    "index.html": "./index.html",
+    "main.343b45e5.css.map": "./static/css/main.343b45e5.css.map",
+    "main.fc7433ae.js.map": "./static/js/main.fc7433ae.js.map"
   },
   "entrypoints": [
     "static/css/main.343b45e5.css",
