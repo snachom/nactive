@@ -1,10 +1,22 @@
+import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { types } from '../../types/types';
+import { AuthContext } from '../../auth/authContext';
 import './login.css';
 
 export const Login = () => {
 
   const navigate = useNavigate()
-  const handleLogin = () => { navigate('/', { replace: true }) }
+  const {dispatch} = useContext(AuthContext)
+  const handleLogin = () => { 
+    
+    dispatch({
+      type: types.login,
+      payload: { name: 'Nacho' }
+    })
+
+    navigate('/', { replace: true }) 
+  }
 
   return (
     <div className="container login-wrapper">

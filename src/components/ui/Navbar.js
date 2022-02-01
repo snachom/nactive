@@ -1,14 +1,14 @@
 import React, { useContext } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { AuthContext } from '../../auth/authContext'
 
 import './navbar.css'
 
 export const Navbar = () => {
 
   const navigate = useNavigate()
-  const handleLogout = () => {
-    navigate('/login', { replace: true })
-  }
+  const handleLogout = () => { navigate('/login', { replace: true }) }
+  const { user } = useContext(AuthContext)
 
 	return (
 
@@ -18,7 +18,7 @@ export const Navbar = () => {
         <Link
           className="navbar-brand"
           to="/" >
-          Home
+          Nactive
         </Link>
 
         <button className="navbar-toggler">
@@ -66,7 +66,7 @@ export const Navbar = () => {
           
           <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
             <ul className="navbar-nav ml-auto logout-wrapper">
-              <span className="nav-item nav-link text-warning "> Nacho </span>
+              <span className="nav-item nav-link text-warning "> { user.name } </span>
               <button
                 className="nav-item nav-link btn btn-outline-warning"
                 onClick={ handleLogout }

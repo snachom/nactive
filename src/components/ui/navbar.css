@@ -58,6 +58,10 @@
   color: orange !important;
 }
 
+.navbar-toggler-icon[aria-expanded="true"] {
+  fill: orange;
+}
+
 .logout-wrapper {
   align-items: center;
   justify-content: flex-end;
@@ -77,6 +81,7 @@
   font-size: 15px;
   letter-spacing: 2px;
   color: white !important;
+  border-color: orange;
 }
 
 .logout-wrapper span {
@@ -84,6 +89,10 @@
   font-size: 20px;
   letter-spacing: 2px;
   margin: 0 10px;
+}
+
+.nav-item.text-warning {
+  color: orange !important;
 }
 
 .logout-wrapper button:hover {
@@ -101,6 +110,9 @@
 @media (min-width: 600px) {
   .navbar-nav {
     gap: 1em;
+  }
+  .logout-wrapper {
+    gap: 0;
   }
   .dropdown ul .nav-submenu {
     color: black !important;
@@ -128,3 +140,11 @@
   }
   
 }
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
