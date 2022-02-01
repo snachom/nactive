@@ -1,6 +1,11 @@
+import { useNavigate } from 'react-router-dom';
 import './login.css';
 
 export const Login = () => {
+
+  const navigate = useNavigate()
+  const handleLogin = () => { navigate('/', { replace: true }) }
+
   return (
     <div className="container login-wrapper">
       <div className="login-wrapper-inner">
@@ -9,7 +14,7 @@ export const Login = () => {
 
         <button 
           className="btn btn-outline-dark btn-login"
-          // onClick={ handleLogin }
+          onClick={ handleLogin }
         >
           Login
         </button>

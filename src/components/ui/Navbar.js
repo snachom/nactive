@@ -5,6 +5,11 @@ import './navbar.css'
 
 export const Navbar = () => {
 
+  const navigate = useNavigate()
+  const handleLogout = () => {
+    navigate('/login', { replace: true })
+  }
+
 	return (
 
 		<nav className="navbar navbar-expand-sm navbar-dark bg-black">
@@ -64,7 +69,7 @@ export const Navbar = () => {
               <span className="nav-item nav-link text-warning "> Nacho </span>
               <button
                 className="nav-item nav-link btn btn-outline-warning"
-                // onClick={ handleLogout }
+                onClick={ handleLogout }
               >
                 Logout
               </button>

@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('../../../../public/assets/background/yellow-stain.jpg');
+  background-image: url('../../../public/assets/background/yellow-stain.jpg');
 }
 @media (min-width: 600px) {
   .login-wrapper {
