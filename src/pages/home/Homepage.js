@@ -3,8 +3,6 @@ import React from 'react';
 export const Homepage = () => {
 
   return (  
-    <div className="app-container container">
-      HomePage
-    </div>
+    <div className="homepage app-container container">home</div>
   )
 };

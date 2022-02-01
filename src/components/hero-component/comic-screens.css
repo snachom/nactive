@@ -1,3 +1,7 @@
+.marvel-container, .dc-container {
+  background-image: url(../../../public/assets/background/ballon.jpg);
+}
+
 .marvel-screen, .dc-screen {
   margin: 0 auto;
 }
