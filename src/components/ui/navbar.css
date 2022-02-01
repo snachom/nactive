@@ -3,24 +3,55 @@
   position: fixed;
   width: 100%;
   z-index: 1;
-}
-
-.navbar {
   background-position: top;
   background-image: url('../../../public/assets/background/ballon.jpg');
 }
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+.navbar-nav a {
+  color: white !important;
+}
+
+.dropdown {
+  padding: 8px;
+}
+.dropdown a:first-child {
+  text-decoration: none;
+  color: white !important;
+}
+
+@media (min-width: 600px) {
+  .navbar-nav {
+    gap: 1em;
+  }
+  .dropdown ul .nav-submenu {
+    color: black !important;
+  }
+}
 
 @media (max-width: 600px) {
-  .nav-submenu {
+  .navbar-nav {
+    gap: 0;
+    align-items: flex-start;
+  }
+  .nav-submenu, .dropdown {
     padding: .2em 30px !important;
-    color: black !important;
   }
   .nav-submenu:last-child {
     margin-bottom: 10px;
   }
+  .dropdown ul .nav-submenu {
+    color: white !important;
+  }
+  .dropdown ul {
+    background-color: transparent
+  }
 }
 
-[aria-current]:not([aria-current="false"]) {
+[aria-current]:not([aria-current="false"]),
+.dropdown ul .nav-submenu[aria-current]:not([aria-current="false"]) {
   /* font-weight: bold; */
   color: orange !important;
 }

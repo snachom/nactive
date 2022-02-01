@@ -25,9 +25,18 @@ export const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navBarMenu">
           <div className="navbar-nav">
-
+            <NavLink
+              className={ ( {isActive} ) => { return "nav-submenu nav-item nav-link + (isActive ? 'active' : '')"} }
+              to="/gifs" >
+              Gifs
+            </NavLink>
+            <NavLink
+              className={ ( {isActive} ) => { return "nav-submenu nav-item nav-link + (isActive ? 'active' : '')"} }
+              to="/tasks" >
+              Tasks
+            </NavLink>
             <div className="dropdown">
-              <a className="dropdown-toggle" data-bs-toggle="dropdown" href="#">Hero</a>
+              <NavLink className="dropdown-toggle" data-bs-toggle="dropdown" to="#">Hero</NavLink>
               <ul className="dropdown-menu" role="menu">
 
                 <NavLink
