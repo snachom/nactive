@@ -39,7 +39,7 @@ export const TodoApp = () => {
 
 
   return (
-    <div>
+    <div className="container todo-app-wrapper">
       <h1>TodoApp <small>({ todos.length })</small></h1>
       <hr/>
 

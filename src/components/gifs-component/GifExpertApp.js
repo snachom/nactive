@@ -11,7 +11,8 @@ export const GifExpertApp = ({ defaultCategories = ['Charlie Brown'] }) => {
   const [categories, setCategories] = useState(defaultCategories);
 
   return ( 
-    <>
+
+    <div className="gif-app-wrapper">
       <div className="title-wrapper">
         <h2 className="app-title"> Giff App </h2>
         <hr />
@@ -28,6 +29,6 @@ export const GifExpertApp = ({ defaultCategories = ['Charlie Brown'] }) => {
           )
         }
       </ol>
-    </>
+    </div>
   )
 };

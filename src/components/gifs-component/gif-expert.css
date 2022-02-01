@@ -1,3 +1,6 @@
+.gif-app-wrapper{
+	padding-top: 90px;
+}
 
 .title-wrapper {
 	width: 100%;
@@ -6,6 +9,7 @@
 	align-items: center;
 	justify-content: center;
 	background: #ffffff; 
+	margin-bottom: 20px;
 }
 
 .app-title {

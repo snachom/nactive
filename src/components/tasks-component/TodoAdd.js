@@ -29,11 +29,11 @@ export const TodoAdd = ({handleAddTodo}) => {
       <h4>Agregar TODO</h4>
       <hr/>
 
-      <form onSubmit={ handleSubmit } >
+      <form className="todo-app-form" onSubmit={ handleSubmit } >
         <input 
           type="text" 
           name="description"
-          className="form-control"
+          className="form-control todo-app-input"
           placeholder="Aprender..."
           autoComplete="off"
           value={ description }

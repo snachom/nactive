@@ -1,0 +1,54 @@
+.navbar {
+  margin-bottom: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar {
+  background-position: top;
+  background-image: url('../../../public/assets/background/ballon.jpg');
+}
+
+@media (max-width: 600px) {
+  .nav-submenu {
+    padding: .2em 30px !important;
+    color: black !important;
+  }
+  .nav-submenu:last-child {
+    margin-bottom: 10px;
+  }
+}
+
+[aria-current]:not([aria-current="false"]) {
+  /* font-weight: bold; */
+  color: orange !important;
+}
+
+.logout-wrapper {
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0;
+  width: 100%;
+  flex-direction: row;
+}
+@media (max-width: 600px) {
+  .logout-wrapper {
+    gap: .7em;
+  }
+}
+
+.logout-wrapper button {
+  padding: 7px 15px !important;
+}
+.logout-wrapper button:hover {
+  color: black !important;
+}
+
+.navbar-toggler {
+  border-color: white !important;
+  fill: white !important;
+}
+.navbar-toggler-icon {
+  background-image: none !important;
+}

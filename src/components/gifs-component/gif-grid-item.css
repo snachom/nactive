@@ -1,4 +1,4 @@
-.card {
+.gif-card {
   align-content: center;
   border: 1px solid black;
   border-radius: 6px;
@@ -12,13 +12,13 @@
   overflow: hidden;
 }
 
-.card img {
+.gif-card img {
   max-height: 150px;
   object-fit: cover;
   object-position: top;
   vertical-align: middle;
 }
-.card p {
+.gif-card p {
   text-align: center;
   padding: 5px;
 }

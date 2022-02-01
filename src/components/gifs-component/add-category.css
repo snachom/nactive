@@ -1,8 +1,10 @@
-form {
+.giphy-form {
   max-width: 98.5%;
+  margin: 0 auto;
 }
 
-input {
+.giphy-input {
   color: grey;
   width: 100%;
+  margin-bottom: 2em;
 }

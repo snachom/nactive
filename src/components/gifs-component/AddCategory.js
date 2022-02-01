@@ -22,9 +22,10 @@ export const AddCategory = ( {setCategories} ) => {
   }
 
   return (
-    <form onSubmit={ handleSubmit }>
+    <form className="giphy-form" onSubmit={ handleSubmit }>
       {/* <p> { inputValue } </p> */}
       <input 
+        className="form-control giphy-input"
         type="text"
         value= { inputValue }
         onChange= { handleInputChange }

@@ -7,7 +7,7 @@ export const TodoListItem = ({todo, index, handleToggle, handleDelete}) => {
       className="list-group-item"
     > 
       <p 
-        className={`${ todo.done && 'completed fst-italic' }`}
+        className={`todo-item ${ todo.done && 'completed fst-italic' }`}
         onClick={ () => handleToggle( todo.id ) }
       > {index+1}. { todo.desc } </p>
 
