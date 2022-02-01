@@ -18,7 +18,7 @@ export const DashboardRoutes = () => {
           <Route path="/hero/marvel" element={<MarvelScreen />} />
           <Route path="/hero/dc" element={<DCScreen />} />
           <Route path="/hero/search" element={<SearchScreen />} />
-            <Route path="/hero/hero-detail" element={<HeroDetail />} />
+            <Route path="/hero/hero-detail/:heroId" element={<HeroDetail />} />
         <Route path="gifs" element={<GifExpertApp />} />
         <Route path="tasks" element={<TodoApp />} />
         <Route index path="/" element={<Homepage />} />
