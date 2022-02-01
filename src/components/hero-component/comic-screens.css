@@ -39,6 +39,8 @@
 }
 
 .buttons {
+  display: flex;
+  gap: 0.1em;
   padding-left: 8px;
   padding-top: 3px;
   float: left;
@@ -47,6 +49,7 @@
 
 .buttons:hover a {
   visibility: visible;
+  text-decoration: none;
 }
 
 .close {
@@ -56,7 +59,9 @@
   height: 11px;
   border: 1px solid #e33e41;
   border-radius: 50%;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .close:active {
