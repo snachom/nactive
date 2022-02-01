@@ -3,9 +3,14 @@ import { authReducer } from "./authReducer";
 
 export const AuthContext = createContext({
   logged: false,
-  onLogout: () => {},
-  onLogin: (user, password) => {}
 });
+
+// const init = () => {
+//   return {
+//     logged: true,
+//     name: "Nacho temporal",
+//   };
+// }
 
 const init = () => {
   return JSON.parse(localStorage.getItem("user")) || { logged: false };
@@ -28,5 +33,5 @@ export const AuthContextProvider = ({children}) => {
       {children}
     </AuthContext.Provider>
   )
-  
+
 }
