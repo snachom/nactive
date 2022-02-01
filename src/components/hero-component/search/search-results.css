@@ -1,0 +1,17 @@
+.filtered-cards .card-cols {
+  margin-bottom: .5em;
+}
+
+@media (min-width: 600px) {
+  .filtered-cards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    gap: 0.5em;
+  }
+  .filtered-cards .card-cols {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+}

@@ -32,15 +32,6 @@
   color: white !important;
 }
 
-@media (min-width: 600px) {
-  .navbar-nav {
-    gap: 1em;
-  }
-  .dropdown ul .nav-submenu {
-    color: black !important;
-  }
-}
-
 @media (max-width: 600px) {
   .navbar-nav {
     gap: 0;
@@ -58,6 +49,7 @@
   .dropdown ul {
     background-color: transparent
   }
+  
 }
 
 [aria-current]:not([aria-current="false"]),
@@ -104,4 +96,35 @@
 }
 .navbar-toggler-icon {
   background-image: none !important;
+}
+
+@media (min-width: 600px) {
+  .navbar-nav {
+    gap: 1em;
+  }
+  .dropdown ul .nav-submenu {
+    color: black !important;
+  }
+  .navbar-brand {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  .navbar-nav a {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .logout-wrapper button {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  
+  .logout-wrapper span {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  
 }
