@@ -1,5 +1,9 @@
 import React from 'react';
 
 export const SearchScreen = () => {
-  return <div>Search</div>;
+  return (
+    <div className="app-container">
+      Search
+    </div>
+  )
 };

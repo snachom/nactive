@@ -1,0 +1,38 @@
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../../../public/assets/background/yellow-stain.jpg');
+}
+@media (min-width: 600px) {
+  .login-wrapper {
+    min-width: 100%;
+    margin: 0;
+  }
+}
+
+.login-wrapper-inner {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 4em 12em;
+  display: flex;
+  flex-flow: column;
+}
+@media (max-width: 600px) {
+  .login-wrapper-inner {
+    padding: 2em 8em;
+  }
+}
+
+.login-wrapper-inner h1 {
+  font-family: 'Rubik Beastly', cursive;
+  font-size: 40px;
+}
+
+.btn-login {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+  letter-spacing: 1px;
+}

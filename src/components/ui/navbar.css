@@ -6,16 +6,22 @@
   background-position: top;
   background-image: url('../../../public/assets/background/ballon.jpg');
 }
+.navbar a {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
+}
+
 .navbar-nav {
   display: flex;
   align-items: center;
 }
 .navbar-nav a {
   color: white !important;
+  padding-top: 10px
 }
 
 .dropdown {
-  padding: 8px;
+  padding: 2px 8px 0;
 }
 .dropdown a:first-child {
   text-decoration: none;
@@ -71,7 +77,19 @@
 
 .logout-wrapper button {
   padding: 7px 15px !important;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: white !important;
 }
+
+.logout-wrapper span {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin: 0 10px;
+}
+
 .logout-wrapper button:hover {
   color: black !important;
 }

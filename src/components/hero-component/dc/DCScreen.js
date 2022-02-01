@@ -1,5 +1,9 @@
 import React from 'react';
 
 export const DCScreen = () => {
-  return <div>DC</div>;
+  return (
+    <div className="app-container">
+      DC
+    </div>
+  )
 };
