@@ -5,8 +5,8 @@ import { DCScreen } from '../components/hero-component/dc/DCScreen';
 import { MarvelScreen } from '../components/hero-component/marvel/MarvelScreen';
 import { SearchScreen } from '../components/hero-component/search/SearchScreen';
 import { TodoApp } from '../components/tasks-component/TodoApp';
-import { Homepage } from '../pages/Homepage';
-import { Login } from '../pages/Login';
+import { Homepage } from '../pages/home/Homepage';
+import { Login } from '../pages/home/login/Login';
 import { Navbar } from '../components/ui/Navbar';
 
 export const AppRouter = () => {
