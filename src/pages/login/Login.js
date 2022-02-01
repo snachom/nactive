@@ -8,14 +8,15 @@ export const Login = () => {
 
   const navigate = useNavigate()
   const {dispatch} = useContext(AuthContext)
+
   const handleLogin = () => { 
     
     dispatch({
       type: types.login,
       payload: { name: 'Nacho' }
     })
-
-    navigate('/', { replace: true }) 
+    const lastPath = localStorage.getItem('lastPath') || '/'
+    navigate(lastPath, { replace: true }) 
   }
 
   return (

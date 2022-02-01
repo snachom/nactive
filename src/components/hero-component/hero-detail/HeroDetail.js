@@ -19,9 +19,9 @@ export const HeroDetail = () => {
   }
 
   return (
-    <div className="app-container container">
+    <div className="app-container-detail container">
       <div className="container card-info animate__animated animate__fadeInLeft">
-        <div className="row">
+        <div className="row card-row-detail">
           <div className="col-4 card-head-wrapper">
             <div className="card-head">
               <img 
@@ -31,7 +31,7 @@ export const HeroDetail = () => {
             </div>
           </div>
           <div className="col-8">
-            <div className="card-body">
+            <div className="card-body card-body-detail">
               <h3>{superhero}</h3>
               <hr/>
               <ul className="list-group">

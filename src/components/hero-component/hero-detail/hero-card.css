@@ -3,6 +3,12 @@
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
+@media (min-width: 600px) {
+  .card-row-detail {
+    max-height: 500px !important;
+  }
+}
+
 .card-info {
   border: 1px solid black;
   border-radius: 25px;
@@ -25,13 +31,23 @@
   object-fit: cover;
 }
 
-
 .card-body {
   display: flex;
   flex-flow: column;
   justify-content: center;
   height: 100%;
 }
+.card-body-detail {
+  font-size: 13px;
+}
+@media (min-width: 600px) {
+  .card-body {
+    justify-content: flex-start;
+    padding-top: 50px;
+    font-size: 16px;
+  }
+}
+
 
 
 
