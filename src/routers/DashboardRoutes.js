@@ -8,12 +8,14 @@ import { SearchScreen } from '../components/hero-component/search/SearchScreen';
 import { TodoApp } from '../components/tasks-component/TodoApp';
 import { Homepage } from '../pages/home/Homepage';
 import { HeroDetail } from '../components/hero-component/hero-detail/HeroDetail';
+import { Smash } from '../components/smash/Smash';
 
 export const DashboardRoutes = () => {
   return (
     <>
       <Navbar />
       <Routes>
+        <Route path="smash" element={<Smash />} />
         <Route path="hero" element={<HeroesApp />} />
           <Route path="/hero/marvel" element={<MarvelScreen />} />
           <Route path="/hero/dc" element={<DCScreen />} />

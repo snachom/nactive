@@ -44,6 +44,11 @@ export const Navbar = () => {
               to="/tasks" >
               Tasks
             </NavLink>
+            <NavLink
+              className={ ( {isActive} ) => { return "nav-submenu nav-item nav-link + (isActive ? 'active' : '')"} }
+              to="/smash" >
+              Smash
+            </NavLink>
             <div className="dropdown">
               <NavLink className="dropdown-toggle" data-bs-toggle="dropdown" to="#">Hero</NavLink>
               <ul className="dropdown-menu" role="menu">
