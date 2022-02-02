@@ -9,7 +9,7 @@ export const HeroCard = ({
   first_appearance,
   characters
 }) => {
-  const imagePath = `/assets/${id}.jpg`;
+  // const imagePath ={`../assets/${id}.jpg`};
   return (
     <div className="col-md-4 col-12 card-cols animate__animated animate__fadeIn">
       <div className="hero-card">
@@ -17,7 +17,7 @@ export const HeroCard = ({
           <div className="col-4 card-head-wrapper">
             <div className="card-head">
               <img 
-                src={ imagePath } 
+                src={`../assets/${id}.jpg`} 
                 className="card-img" 
                 alt={ superhero } 
               />
