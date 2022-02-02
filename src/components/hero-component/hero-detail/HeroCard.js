@@ -9,7 +9,7 @@ export const HeroCard = ({
   first_appearance,
   characters
 }) => {
-  const imagePath = `/assets/${id}.jpg`;
+  const imagePath = `/nactive/assets/${id}.jpg`;
   return (
     <div className="col-md-4 col-12 card-cols animate__animated animate__fadeIn">
       <div className="hero-card">
