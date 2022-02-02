@@ -7,7 +7,7 @@ export const HeroDetail = () => {
   const { heroId } = useParams()
   const hero = useMemo( () => getHeroById(heroId), [heroId] )
   const { superhero, publisher, alter_ego, first_appearance } = hero
-  const imagePath = `/assets/${heroId}.jpg`
+  const imagePath = `/nactive/assets/${heroId}.jpg`
   const navigate = useNavigate()
 
   if(!hero) {

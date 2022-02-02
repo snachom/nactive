@@ -21,6 +21,7 @@ export const DashboardRoutes = () => {
             <Route path="/hero/hero-detail/:heroId" element={<HeroDetail />} />
         <Route path="gifs" element={<GifExpertApp />} />
         <Route path="tasks" element={<TodoApp />} />
+        <Route index path="/nactive" element={<Homepage />} />
         <Route index path="/" element={<Homepage />} />
       </Routes>
     </>
