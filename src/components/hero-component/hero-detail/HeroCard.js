@@ -17,7 +17,7 @@ export const HeroCard = ({
           <div className="col-4 card-head-wrapper">
             <div className="card-head">
               <img 
-                src={`../assets/${id}.jpg`} 
+                src={`/assets/${id}.jpg`} 
                 className="card-img" 
                 alt={ superhero } 
               />
