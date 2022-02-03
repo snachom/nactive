@@ -1,21 +1,25 @@
 import { smashCharacters } from "../../data/smashCharacters";
+import { SmashCharacters } from "./SmashCharacters";
 import './smash.css'
 
 export const Smash = ({ 
   id,
-  name,
-  console
 }) => {
   return (
     <>
       <div className="container app-container">
-        {/* <p>Smash Heroes</p> */}
+        <div className="smash-logo-container">
+          <div className="smash-img-wrapper">
+            <img className="smash-logo" src="/assets/smash/sbb_logo.png" alt='smash-logo'/>
+          </div>
+        </div>
         <div className="characters-wrapper">
         {
           smashCharacters.map( smashCharacter => (
-            <div className="img-wrapper" key={smashCharacter.id}>
-              <img className="smash-img" src={`/assets/smash/${smashCharacter.id}.png`} alt={ name } />
-            </div>
+            <SmashCharacters
+              key={ smashCharacter.id }
+              {...smashCharacter}
+            />
           ))
         }
         </div>

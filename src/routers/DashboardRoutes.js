@@ -9,6 +9,7 @@ import { TodoApp } from '../components/tasks-component/TodoApp';
 import { Homepage } from '../pages/home/Homepage';
 import { HeroDetail } from '../components/hero-component/hero-detail/HeroDetail';
 import { Smash } from '../components/smash/Smash';
+import { SmashDetail } from '../components/smash/SmashDetail';
 
 export const DashboardRoutes = () => {
   return (
@@ -16,6 +17,7 @@ export const DashboardRoutes = () => {
       <Navbar />
       <Routes>
         <Route path="smash" element={<Smash />} />
+        <Route path="smash/:smashId" element={<SmashDetail />} />
         <Route path="hero" element={<HeroesApp />} />
           <Route path="/hero/marvel" element={<MarvelScreen />} />
           <Route path="/hero/dc" element={<DCScreen />} />

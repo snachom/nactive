@@ -56,8 +56,20 @@
   }
 }
 
+.hero-text {
+  font-weight: bold;
+  margin: 0;
+}
 
-
+.hero-text-res {
+  font-style: italic;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .hero-text-res {
+    text-align: right;
+  }
+}
 
 
 

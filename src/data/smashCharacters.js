@@ -19,6 +19,16 @@ export const smashCharacters = [
     'name':'Daisy', 
     'console':'Nintendo'
   },
+  {
+    'id': 'zelda',
+    'name':'Zelda', 
+    'console':'Nintendo'
+  },
+  // {
+  //   'id': 'solid-snake',
+  //   'name':'Snake', 
+  //   'console':'PlayStation'
+  // },
   // {
   //   'id': 'donkey-kong',
   //   'name':'Donkey Kong',
@@ -74,11 +84,11 @@ export const smashCharacters = [
     'name':'Pac-man',
     'console':'Atari'
   },
-  {
-    'id': 'pichu',
-    'name':'Pichu',
-    'console':'Nintendo'
-  },
+  // {
+  //   'id': 'pichu',
+  //   'name':'Pichu',
+  //   'console':'Nintendo'
+  // },
   {
     'id': 'pokemon-trainer',
     'name':'Pokemon trainer',

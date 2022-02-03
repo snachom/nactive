@@ -1,8 +1,8 @@
 import { smashCharacters } from "../data/smashCharacters"
 
-export const getSmashByCharacter = ( name = "" ) => {
+export const getSmashByCharacter = ( console = "" ) => {
 
-  return smashCharacters.find(smashCharacter => smashCharacter.name === name);
+  return smashCharacters.filter(smashCharacter => smashCharacter.console === console);
 
   
 }

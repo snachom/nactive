@@ -36,9 +36,9 @@ export const HeroDetail = () => {
                 <h3>{superhero}</h3>
                 <hr/>
                 <ul className="list-group">
-                  <li className="list-group-item"><b>Alter Ego:</b> {alter_ego}</li>
-                  <li className="list-group-item"><b>Publisher:</b> {publisher}</li>
-                  <li className="list-group-item"><b>First Appearance:</b> {first_appearance}</li>
+                  <li className="list-group-item hero-detail-text"><p className="hero-text">Alter Ego:</p><p className="hero-text-res">{alter_ego}</p></li>
+                  <li className="list-group-item hero-detail-text"><p className="hero-text">Publisher:</p><p className="hero-text-res">{publisher}</p></li>
+                  <li className="list-group-item hero-detail-text"><p className="hero-text">First Appearance:</p><p className="hero-text-res">{first_appearance}</p></li>
                 </ul>
                 <hr/>
                 <button 
