@@ -10,7 +10,7 @@ export const Smash = ({
       <div className="container app-container">
         <div className="smash-logo-container">
           <div className="smash-img-wrapper">
-            <img className="smash-logo" src="/assets/smash/sbb_logo.png" alt='smash-logo'/>
+            <img className="smash-logo" src="/nactive/assets/smash/sbb_logo.png" alt='smash-logo'/>
           </div>
         </div>
         <div className="characters-wrapper">

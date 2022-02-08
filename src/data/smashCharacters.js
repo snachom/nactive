@@ -1,9 +1,9 @@
 export const smashCharacters = [
-  {
-    'id': 'bomberman',
-    'name':'bomberman', 
-    'console':'PlayStation'
-  },
+  // {
+  //   'id': 'bomberman',
+  //   'name':'bomberman', 
+  //   'console':'PlayStation'
+  // },
   {
     'id': 'bowser',
     'name':'bowser', 
@@ -24,11 +24,11 @@ export const smashCharacters = [
     'name':'Zelda', 
     'console':'Nintendo'
   },
-  // {
-  //   'id': 'solid-snake',
-  //   'name':'Snake', 
-  //   'console':'PlayStation'
-  // },
+  {
+    'id': 'solid-snake',
+    'name':'Snake', 
+    'console':'PlayStation'
+  },
   // {
   //   'id': 'donkey-kong',
   //   'name':'Donkey Kong',
