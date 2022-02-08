@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "./static/css/main.4c96fa59.css",
-    "main.js": "./static/js/main.7bb9f3f2.js",
+    "main.js": "./static/js/main.35563485.js",
     "static/media/yellow-stain.jpg": "./static/media/yellow-stain.76ce7642626c08cf14a6.jpg",
     "static/media/ballon.jpg": "./static/media/ballon.12616b172e3efbe37432.jpg",
     "static/media/nintendo-bg.png": "./static/media/nintendo-bg.553ab5ee51ae78faec4e.png",
     "index.html": "./index.html",
     "main.4c96fa59.css.map": "./static/css/main.4c96fa59.css.map",
-    "main.7bb9f3f2.js.map": "./static/js/main.7bb9f3f2.js.map"
+    "main.35563485.js.map": "./static/js/main.35563485.js.map"
   },
   "entrypoints": [
     "static/css/main.4c96fa59.css",
-    "static/js/main.7bb9f3f2.js"
+    "static/js/main.35563485.js"
   ]
 }
