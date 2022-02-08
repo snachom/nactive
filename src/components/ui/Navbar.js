@@ -21,7 +21,7 @@ export const Navbar = () => {
 
         <Link
           className="navbar-brand"
-          to="/" >
+          to="/nactive" >
           Nactive
         </Link>
 
