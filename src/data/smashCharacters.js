@@ -11,7 +11,7 @@ export const smashCharacters = [
   },
   {
     'id': 'crash-bandicoot',
-    'name':'Crash Bandicoot', 
+    'name':'Crash', 
     'console':'Nintendo'
   },
   {
@@ -91,7 +91,7 @@ export const smashCharacters = [
   // },
   {
     'id': 'pokemon-trainer',
-    'name':'Pokemon trainer',
+    'name':'Trainer',
     'console':'Nintendo'
   },
   {
