@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import { AuthContext } from '../../auth/authContext'
+import Calendar from 'react-calendar'
 import { Link } from 'react-router-dom';
-import './homepage.css'
+import { AuthContext } from '../../auth/authContext'
 import { useDate } from '../../hooks/useDate';
-
+import './homepage.css'
 
 export const Homepage = () => {
 
@@ -25,16 +25,6 @@ export const Homepage = () => {
               <li>
                 <Link className="dash-link header-menu-tab" to="#"><span className="dash-span icon entypo-cog scnd-font-color"></span>Account</Link>
               </li>
-              {/* <li>
-                <Link className="dash-link header-menu-tab" to="#"><span className="dash-span icon fontawesome-user scnd-font-color"></span>Account</Link>
-              </li> */}
-              {/* <li>
-                <Link className="dash-link header-menu-tab" to="#"><span className="dash-span icon fontawesome-envelope scnd-font-color"></span>Messages</Link>
-                <Link className="dash-link header-menu-number" to="#">5</Link>
-              </li> */}
-              {/* <li>
-                <Link className="dash-link header-menu-tab" to="#5"><span className="dash-span icon fontawesome-star-empty scnd-font-color"></span>Favorites</Link>
-              </li> */}
             </ul>
 
             <div className="profile-menu">
@@ -429,84 +419,10 @@ export const Homepage = () => {
                   
               <div className="calendar-month block">
                 <div className="arrow-btn-container">
-                  <Link className="dash-link arrow-btn left" to="#202">
-                    <span className="dash-span icon fontawesome-angle-left"></span>
-                  </Link>
-                  <h2 className="heading2 titular">APRIL 2013</h2>
-                  <Link className="dash-link arrow-btn right" to="#203">
-                    <span className="dash-span icon fontawesome-angle-right"></span>
-                  </Link>
-                </div>
 
-                <table className="calendar">
-                  <thead className="days-week">
-                    <tr>
-                      <th>S</th>
-                      <th>M</th>
-                      <th>T</th>
-                      <th>W</th>
-                      <th>R</th>
-                      <th>F</th>
-                      <th>S</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td><Link className="dash-link scnd-font-color" to="#100">1</Link></td>
-                    </tr>
-                    <tr>
-                      <td><Link className="dash-link scnd-font-color" to="#101">2</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#102">3</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#103">4</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#104">5</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#105">6</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#106">7</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#107">8</Link></td>
-                    </tr>
-                    <tr>
-                      <td><Link className="dash-link scnd-font-color" to="#108">9</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#109">10</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#110">11</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#111">12</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#112">13</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#113">14</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#114">15</Link></td>
-                    </tr>
-                    <tr>
-                      <td><Link className="dash-link scnd-font-color" to="#115">16</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#116">17</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#117">18</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#118">19</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#119">20</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#120">21</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#121">22</Link></td>
-                    </tr>
-                    <tr>
-                      <td><Link className="dash-link scnd-font-color" to="#122">23</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#123">24</Link></td>
-                      <td><Link className="dash-link scnd-font-color" to="#124">25</Link></td>
-                      <td><Link className="dash-link today" to="#125">26</Link></td>
-                      <td><Link className="dash-link" to="#126">27</Link></td>
-                      <td><Link className="dash-link" to="#127">28</Link></td>
-                      <td><Link className="dash-link" to="#128">29</Link></td>
-                    </tr>
-                    <tr>
-                      <td><Link className="dash-link" to="#129">30</Link></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                  </tbody>
-                </table>
+                  <Calendar />
+
+                </div>
             </div> 
 
               {/*·······························*/}
