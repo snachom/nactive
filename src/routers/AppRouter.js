@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Login } from '../pages/login/Login';
 import { DashboardRoutes } from './DashboardRoutes';
+import { HomeRouter } from './HomeRouter';
 import { PrivateRoute } from './PrivateRoute';
 import { PublicRoute } from './PublicRoute';
 
@@ -12,6 +13,18 @@ export const AppRouter = () => {
           <PublicRoute>
             <Login />
           </PublicRoute>
+        } />
+
+        <Route path="/" element={
+          <PrivateRoute>
+            <HomeRouter />
+          </PrivateRoute>
+        } />
+
+        <Route path="/nactive/" element={
+          <PrivateRoute>
+            <HomeRouter />
+          </PrivateRoute>
         } />
 
         <Route path="/*" element={

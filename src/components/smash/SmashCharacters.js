@@ -10,7 +10,7 @@ export const SmashCharacters = ({
     <>
       <div className="img-wrapper">
         <div className="clip-wrapper"></div>
-        <Link to={`/smash/${id}`} ><img className="smash-img" src={`/nactive/assets/smash/${id}.png`} alt={ name } /></Link>
+        <Link to={`/smash/${id}`} ><img className="smash-img" src={`/assets/smash/${id}.png`} alt={ name } /></Link>
       </div>
     </>
   )
