@@ -22,7 +22,7 @@ export const SmashDetail = () => {
       <div className="container-smash-detail">
         <header className="header-smash-card">
         <div className="bio">
-          <img src={`/assets/smash/${smash.id}.png`} alt="background" className="bg" />
+          <img src={`/nactive/assets/smash/${smash.id}.png`} alt="background" className="bg" />
           <div className="desc">
             <h2>@nachoxtacks</h2>
             <p> I'm a web developer and I love creating awesome stuff. I usually work as a Front End Developer with Drupal roles, however React is one of my passions as well.</p>
@@ -32,7 +32,7 @@ export const SmashDetail = () => {
 
       </header>
       <div className="avatarcontainer">
-          <img src="/assets/smash/ssb_icon.png" alt="avatar" className="avatar" />
+          <img src="/nactive/assets/smash/ssb_icon.png" alt="avatar" className="avatar" />
         </div>
       <div className="smash-detail-content">
         <div className="data">

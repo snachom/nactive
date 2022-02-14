@@ -1,37 +1,106 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Roboto Thin"), local("Roboto-Thin"), url("http://themes.googleusercontent.com/static/fonts/roboto/v9/vzIUHo9z-oJ4WgkpPOtg13YhjbSpvc47ee6xR_80Hnw.woff") format("woff");
+}
+
+.col-tasks {
+  background-image: url(../../../public/assets/background/paper.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% 45%;
+  height: 100vh;
+}
+
+.tasks-wrapper {
+  position: relative;
+  margin-top: 220px;
+  margin-left: 250px;
+}
+.tasks-wrapper h2, .tasks-wrapper small {
+  font-family: 'Shadows Into Light', cursive;
+}
+.todo-title {
+  position: absolute;
+  border-bottom: 1px solid black;
+}
+.list-group {
+  padding-top: 50px;
+  width: 350px;
+}
+.list-group-item {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+}
+.completed {
+  text-decoration: line-through;
+}
+.list-group-item p {
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 2px;
+}
+
 .todo-item {
   cursor: pointer;
   margin: 0;
 }
 .todo-app-wrapper {
   padding-top: 110px;
+  background: #CDC0B6;
 }
-
-.list-group-item {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
-.completed {
-  text-decoration: line-through;
+.todo-add-wrapper {
+  padding: 20px 10px;
 }
 
 .todo-app-input {
+  font-family: "Roboto";
   margin-bottom: 5px;
   max-width: 140px;
   border: 1px solid grey;
   border-radius: 4px;
   padding: 3px 20px
 }
-
 .btn-add {
   width: 100%;
   max-width: 140px;
   padding: 3px 20px
 }
+.btn-delete {
+  font-family: 'Shadows Into Light', cursive;
+  border: 0;
+}
 
 @media (min-width: 600px) {
   .todo-app-input, .btn-add {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .resp-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .col-tasks {
+    width: 100%;
+    background-position: 50% 50%;
+    height: 40vh;
+  }
+  .tasks-wrapper {
+    margin-top: 50px;
+    margin-left: 79px;
+    font-size: 14px;
+  }
+  .tasks-wrapper h2 {
+    margin-bottom: 0;
+  }
+  .list-group {
+    padding-top: 50px;
+    width: 180px;
+    
   }
 }

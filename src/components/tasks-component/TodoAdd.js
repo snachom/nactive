@@ -26,24 +26,26 @@ export const TodoAdd = ({handleAddTodo}) => {
 
   return (
     <>
-      <h4>Agregar TODO</h4>
-      <hr/>
+      <div className="todo-add-wrapper">
+        <h4>Agregar TODO</h4>
+        <hr/>
 
-      <form className="todo-app-form" onSubmit={ handleSubmit } >
-        <input 
-          type="text" 
-          name="description"
-          className="form-control todo-app-input"
-          placeholder="Aprender..."
-          autoComplete="off"
-          value={ description }
-          onChange={ handleInputChange }
-        />
-        <button 
-          type="submit"
-          className="btn btn-outline-success mt-1 btn-block btn-add"
-        > Add </button>
-      </form>
+        <form className="todo-app-form" onSubmit={ handleSubmit } >
+          <input 
+            type="text" 
+            name="description"
+            className="form-control todo-app-input"
+            placeholder="Aprender..."
+            autoComplete="off"
+            value={ description }
+            onChange={ handleInputChange }
+          />
+          <button 
+            type="submit"
+            className="btn btn-outline-warning mt-1 btn-block btn-add"
+          > Add </button>
+        </form>
+      </div>
     </>
   )
 };
