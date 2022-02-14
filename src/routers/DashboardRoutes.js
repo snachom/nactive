@@ -6,10 +6,10 @@ import { DCScreen } from '../components/hero-component/dc/DCScreen';
 import { MarvelScreen } from '../components/hero-component/marvel/MarvelScreen';
 import { SearchScreen } from '../components/hero-component/search/SearchScreen';
 import { TodoApp } from '../components/tasks-component/TodoApp';
-import { Homepage } from '../pages/home/Homepage';
 import { HeroDetail } from '../components/hero-component/hero-detail/HeroDetail';
 import { Smash } from '../components/smash/Smash';
 import { SmashDetail } from '../components/smash/SmashDetail';
+// import { Homepage } from '../pages/home/Homepage';
 
 export const DashboardRoutes = () => {
   return (
@@ -25,8 +25,8 @@ export const DashboardRoutes = () => {
             <Route path="/hero/hero-detail/:heroId" element={<HeroDetail />} />
         <Route path="gifs" element={<GifExpertApp />} />
         <Route path="tasks" element={<TodoApp />} />
-        <Route index path="/nactive" element={<Homepage />} />
-        <Route index path="/" element={<Homepage />} />
+        {/* <Route index path="/nactive" element={<Homepage />} />
+        <Route index path="/" element={<Homepage />} /> */}
       </Routes>
     </>
   )

@@ -24,8 +24,14 @@
 }
 @media (max-width: 600px) {
   .characters-wrapper {
-    justify-content: flex-start;
-    max-width: 300px;
+    justify-content: center;
+    /* max-width: 300px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: .3em;
+
   }
 }
 
@@ -40,13 +46,18 @@
   position: relative;
   border: 5px solid black;
 }
-
 @media (max-width: 600px) {
   .img-wrapper {
-    object-fit: center;
+    clip-path: none;
+    border: 1px solid black;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 46%;
     width: 20vh;
-    height: 10vh;
+    height: 15vh;
     margin-left: 10px;
+    overflow: hidden;
   }
 }
 
@@ -62,7 +73,14 @@
 }
 @media (max-width: 600px) {
   .smash-img {
-    padding-left: 40px;
+    width:100%; 
+    height:100%;
+    max-width: 100%;
+    object-position: 0 -20px;
+  }
+  .smash-img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
   }
 }
 
