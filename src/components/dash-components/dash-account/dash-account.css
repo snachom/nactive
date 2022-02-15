@@ -1,0 +1,43 @@
+.account {
+  height: 390px;
+}
+.account .titular {
+  padding: 10px 0;
+}
+.sign-in.button {
+  background: #e64c65;
+  margin: 10px auto;
+}
+.sign-in.button:hover {
+  background: #cc324b;
+}
+.account p { 
+  text-align: center;
+}
+.fb-sign-in {
+  margin-top: 28px;
+  display: block;
+  line-height: 50px;
+  background: #3468af;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+.fb-sign-in:hover {
+  background: #1a4e95;
+  text-decoration: none;
+}
+.fb-sign-in .icon {	
+  line-height: 20px;
+  font-size: 12px;
+  padding-right: 3px;
+}
+.fb-border {
+  display: inline-block;
+  width: 23px;
+  line-height: 20px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  margin-right: 10px;
+}

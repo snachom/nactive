@@ -1,0 +1,42 @@
+
+.media {
+  height: 216px;
+}
+#media-display {
+  position: relative;
+  height: 180px;
+}
+#media-display .play {
+  position: absolute;
+  top: 75px;
+  right: 32px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  padding: 2px 5px 2px 9px;
+}
+  #media-display .play:hover {
+    border: 2px solid #e64c65;
+}
+.media-control-bar {
+  padding: 6px 0 0 15px;
+}
+.media-btn, .time-passed {
+  display: inline-block;
+  margin: 0;					
+}
+.media-btn {
+  font-size: 19px;						
+}
+.media-btn:hover, .media-btn:hover span {
+  text-decoration: none;
+  color: #e64c65;
+}
+.play {
+  margin-right: 100px
+}
+.volume {
+  margin-left: 30px;
+}
+.resize {
+  margin-left: 12px;
+}

@@ -1,0 +1,97 @@
+    /*·······························*/
+    /*········· FIRST BLOCK ·········*/
+    /*········ PROFILE BLOCK ········*/
+    /*·······························*/
+   
+.add-button .icon {
+  float: right;
+  line-height: 18px;
+  width: 23px;					
+  border: 2px solid;
+  border-radius: 100%;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px;					
+}
+.add-button .icon:hover {
+  color: #e64c65;
+  border-color: #e64c65;
+}
+.user-name {
+  margin: 25px 0 16px;
+  text-align: center;
+}
+.profile-description {
+  width: 210px;
+  margin: 0 auto;
+  text-align: center;
+}
+.profile-options {
+  padding-top: 23px;
+}
+.profile-options li:nth-child(2) {
+  border-left: 2px solid #1f253d;
+  border-right: 2px solid #1f253d;
+}
+.profile-options p {
+  margin: 0;
+}
+.profile-options a {
+  display: block;	
+  width: 126px;				
+  /* width: 99px; */
+  line-height: 60px;
+  text-align: center;
+  -webkit-transition: background .3s;
+  transition: background .3s;				
+}
+
+.profile-options a:hover {
+  text-decoration: none;
+  background: #ffffff;
+}
+.profile-options a:hover.linkedin .icon {
+  color: #2767B2;
+}
+.profile-options a:hover.insta .icon {
+  color: #CF2E84;
+}
+.profile-options a:hover.github .icon {
+  color: #702A87;
+}
+.profile-options .icon {
+  /* padding-right: 20px; */
+}
+.profile-options .linkedin {
+  border-top: 4px solid #2767B2;
+}
+.profile-options .insta {
+  border-top: 4px solid #CF2E84;
+}
+.profile-options .github {
+  border-top: 4px solid #702A87;
+}
+
+.profile-picture {
+  border-radius: 100%;
+  overflow: hidden;
+  -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;	
+}
+.big-profile-picture {
+  margin: 0 auto;		
+  border: 5px solid #50597b;
+  width: 150px;
+  height: 150px;
+}
+.big-profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.small-profile-picture {
+  border: 2px solid white;
+  width: 40px;
+  height: 40px;
+  }

@@ -1,0 +1,53 @@
+.header-menu {
+  font-size: 17px;
+  line-height: 80px;
+}
+.header-menu li {
+  position: relative;
+  -webkit-transform: translateZ(0); 
+}
+.header-menu-tab {
+  padding: 0 27px;
+  display: flex;
+  line-height: 74px;
+  font-size: 17px;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+  color: #ffffffff;
+}
+.header-menu-tab:hover {
+  background: #ffffff;
+  border-bottom: 4px solid #11a8ab;
+  text-decoration: none;
+  color: #000000;
+}
+.header-menu-tab .icon {
+  padding-right: 15px;
+  color: white;
+}
+.header-menu-tab:hover .icon {
+  color: black;
+}
+.profile-menu {
+  float: right;
+  height: 80px;
+  padding-right: 20px;
+}
+.profile-menu .paragraph-text {
+  font-size: 17px;
+  display: inline-block;
+  line-height: 76px;
+  margin: 0;
+  padding-right: 10px;
+  color: white;
+}
+.profile-menu .dash-link {
+  padding-left: 5px;
+}
+.profile-menu .dash-link:hover {
+  text-decoration: none;
+}
+.small-profile-picture {
+  display: inline-block;
+  vertical-align: middle;
+}
