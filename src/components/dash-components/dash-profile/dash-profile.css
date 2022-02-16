@@ -36,14 +36,20 @@
 .profile-options p {
   margin: 0;
 }
+
 .profile-options a {
   display: block;	
-  width: 126px;				
+  width: 123px;				
   /* width: 99px; */
   line-height: 60px;
   text-align: center;
   -webkit-transition: background .3s;
   transition: background .3s;				
+}
+@media (min-width: 600px) {
+  .profile-options a {
+    width: 126px;
+  }
 }
 
 .profile-options a:hover {

@@ -207,29 +207,46 @@
   padding-right: 2px;
 }
 
-
   /*································································*/
 	/*························ MAIN CONTAINER ························*/
   /*································································*/
 
 .main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+
 	font-family: 'Ubuntu', sans-serif;
-  width: 1200px;
-	height: 2000px;
-  padding-top: 6em;
-	margin: 0 auto;
 	/* width: 950px; */
 }	
+@media (min-width: 600px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 0 auto;
+    padding-top: 3em;
+    height: 2000px;
+    width: 1200px;
+  }
+}
 
-
+  
   /*································································*/
 	/*···························· BLOCKS ····························*/
   /*································································*/
 
 .dash-container {
-  float: left;
-  width: 383px;
-  /* width: 300px; */
+  width: 100vw;
+}
+@media (min-width: 600px) {
+  .dash-container {
+    float: left;
+    width: 383px;
+    /* width: 300px; */
+  }
 }
 .block {
   margin-bottom: 25px;
@@ -242,6 +259,9 @@
 	/*···························· HEADER ····························*/
   /*································································*/
 
+@media (min-width: 600px) {
+  .dash-header { grid-area: 1 / span 3; }
+}
 .dash-header {
   height: 80px;
   background: #035A81;
@@ -251,10 +271,16 @@
 	/*························· LEFT CONTAINER ·······················*/
   /*································································*/
 
-.left-container {}
-
+.left-container { 
+  order: 2;
+}
+@media (min-width: 600px) {
+  .left-container { 
+    grid-area: 2 / 1 / 3 ; 
+  }
+}
 .profile {
-  height: 403px;
+  height: 379px;
   background: #ACD2B8;
 }
 
@@ -263,8 +289,14 @@
 	/*························ MIDDLE CONTAINER ······················*/
   /*································································*/
 
-.middle-container {
-  margin: 0 25px;			
+.middle-container { 
+  order: 1;
+}
+@media (min-width: 600px) {
+  .middle-container { 
+    grid-area: 2 / 2 / 3 ; 
+    margin: 0 25px;			
+  }
 }
 
 .react-calendar {
@@ -281,8 +313,12 @@
 	/*························ RIGHT CONTAINER ·······················*/
   /*································································*/
 
-.right-container {}
-
+.right-container { 
+  order: 3;
+}
+@media (min-width: 600px) {
+  .right-container { grid-area: 2 / 3 / 3 ; }
+}
 .calendar-day {
   height: 320px;
   background: #3468af;
