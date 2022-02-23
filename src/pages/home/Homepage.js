@@ -5,8 +5,8 @@ import { DashLineChart } from '../../components/dash-components/dash-line-chart/
 import { DashMedia } from '../../components/dash-components/dash-media/DashMedia';
 import { DashSocialBlock } from '../../components/dash-components/dash-social/DashSocialBlock';
 import { DashProfile } from '../../components/dash-components/dash-profile/DashProfile';
-import { DashWeater } from '../../components/dash-components/dash-weather/DashWeater';
-import { DashTweets } from '../../components/dash-components/dash-tweets/DashTweets';
+import { DashWeather } from '../../components/dash-components/dash-weather/DashWeather';
+import { DashCovid } from '../../components/dash-components/dash-covid/DashCovid';
 import { DashSocialShare } from '../../components/dash-components/dash-social/DashSocialShare';
 import { DashCalendar } from '../../components/dash-components/dash-calendar/DashCalendar';
 import { DashNewsletter } from '../../components/dash-components/dash-newsletter/DashNewsletter';
@@ -43,13 +43,9 @@ export const Homepage = () => {
 
             <DashLineChart />
 
-            {/*········ FOURTH BLOCK ·······*/}
+            {/*······· FOURTH BLOCK ·······*/}
 
-            <DashMedia />
-
-            {/*········· FIFTH BLOCK ·······*/}
-            
-            <DashSocialBlock />
+            <DashLoading />
 
           </div>
 
@@ -65,15 +61,19 @@ export const Homepage = () => {
 
             {/*········ SECOND BLOCK ·········*/}
 
-            <DashWeater />
+            <DashCovid/>
 
             {/*········· THIRD BLOCK ·········*/}
 
-            <DashTweets />
+            <DashWeather />
 
             {/*········ FOURTH BLOCK ·········*/}
 
             <DashSocialShare />
+
+            {/*········· FIFTH BLOCK ·········*/}
+
+            <DashMedia />
 
           </div>
 
@@ -83,7 +83,7 @@ export const Homepage = () => {
 
           <div className="right-container dash-container">
 
-            {/*········· FIRST BLOCK ···········*/}
+            {/*········· FIRST BLOCK ·········*/}
 
             <DashCalendar />
             
@@ -95,17 +95,17 @@ export const Homepage = () => {
               </div>
             </div> 
 
-            {/*········ THIRD BLOCK ·········*/}
+            {/*········ THIRD BLOCK ··········*/}
 
             <DashNewsletter />
 
-            {/*········· FOURTH BLOCK ·········*/}
+            {/*········· FOURTH BLOCK ········*/}
 
             <DashAccount />
 
-            {/*·········· FIFTH BLOCK ··········*/}
-
-            <DashLoading />
+            {/*········· FIFTH BLOCK ·········*/}
+            
+            <DashSocialBlock />
 
         </div> 
       </div> 

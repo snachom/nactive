@@ -1,52 +1,52 @@
 
-.left-container .social {
+.right-container .social {
   height: 110px;
 }
-.left-container .social li {
+.right-container .social li {
   width: 75px;
   height: 110px;										
 }
-.left-container .social li .icon {
+.right-container .social li .icon {
   text-align: center;
   font-size: 20px;
   margin: 0;
   line-height: 75px;
 }
-.left-container .social li .number {
+.right-container .social li .number {
   text-align: center;
   margin: 0;
   line-height: 34px;
 }
-.left-container .social .facebook {
+.right-container .social .facebook {
   background: #3468af;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-.left-container .social .facebook .number {
+.right-container .social .facebook .number {
   background: #1a4e95;
   border-bottom-left-radius: 5px;
 }
-.left-container .social .twitter {
+.right-container .social .twitter {
   background: #4fc4f6;						
 }
-.left-container .social .twitter .icon {
+.right-container .social .twitter .icon {
   font-size: 18px;
 }
-.left-container .social .twitter .number {
+.right-container .social .twitter .number {
   background: #35aadc;
 }
-.left-container .social .googleplus {
+.right-container .social .googleplus {
   background: #e64c65;						
 }
-.left-container .social .googleplus .number{
+.right-container .social .googleplus .number{
   background: #cc324b;
 }
-.left-container .social .mailbox {
+.right-container .social .mailbox {
   background: #50597b;						
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.left-container .social .mailbox .number {
+.right-container .social .mailbox .number {
   background: #363f61;
   border-bottom-right-radius: 5px;
 } 

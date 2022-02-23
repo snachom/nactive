@@ -1,0 +1,126 @@
+.covid-heading {
+  background: white;
+}
+
+.perspective {
+  perspective: 76em;
+  perspective-origin: 50% 50px;
+  width: 100%;
+  margin: 10px auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: #fff;
+  text-align: center;
+}
+
+.cube {
+  position: relative;
+  margin: 0 0 50px;
+  width: 300px;
+  height: 175px;
+  transform-origin: 0 100px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in;
+  max-height: 100%;
+}
+.cov-icon {
+  padding-right: 15px;
+}
+.cov-input {
+  display: none;
+}
+.cov-tab {
+  position: absolute;
+  width: 80px;
+  height: 64px;
+  background: pink;
+  right: 0;
+  line-height: 70px;
+  font-weight: 300;
+}
+.cov-tab:nth-child(1) {
+  background: #06D6A0;
+}
+.cov-tab:nth-child(2) {
+  top: 68px;
+  background: #1B9AAA;
+}
+.cov-tab:nth-child(3) {
+  top: 136px;
+  background: #EF476F;
+}
+
+.tab-cov-content {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tab-cov-content h4 {
+  font-size: 25px;
+  font-weight: 300;
+  font-weight: bold;
+}
+.tab-cov-content p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.tab-cov-content:nth-child(2) {
+  transform: translateZ(100px);
+  background: #1B9AAA;
+}
+.tab-cov-content:nth-child(1) {
+  transform: rotateX(-270deg) translateY(-100px);
+  transform-origin: top left;
+  background: #06D6A0;
+}
+.tab-cov-content:nth-child(3) {
+  transform: rotateX(-90deg) translateY(100px);
+  transform-origin: bottom center;
+  background: #EF476F;
+}
+#tab-top:checked ~ .cube {
+  transform: rotateX(-90deg);
+}
+#tab-front:checked ~ .cube {
+  transform: rotateX(0deg);
+}
+#tab-bottom:checked ~ .cube {
+  transform: rotateX(90deg);
+}
+.cov-date {
+  font-size: 16px;
+  margin-bottom: .5em;
+}
+.cov-confirmed,
+.cov-recovered {
+  font-weight: bold;
+}
+.cov-confirmed{
+  color: #EF476F;
+}
+.cov-recovered {
+  color: #47ef55;
+}
+.cov-rec {
+  align-self: center;
+  color: #ffffff;
+  font-weight: bold;
+  width: 100%;
+}
+.cov-subregion {
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+.cov-subregion-recovered{
+  color: #ffffff;
+  font-weight: bold;
+  padding-left: 1em;
+}
+.cov-content {
+  flex: 1 1 50%;
+}

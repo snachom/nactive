@@ -1,6 +1,6 @@
 
 .weather {
-  height: 555px;
+  height: 318px;
 }
 .weather .titular {
   background: #cc324b;
@@ -18,16 +18,22 @@
   padding-left: 50px;					
 }
 .current-day-date {
+  color: #fff;
   font-size: 16px;
+  font-weight: bold;
   padding-top: 16px;
 }
+.current-day-date:first-letter {
+  text-transform: uppercase;
+}
 .current-day-temperature {
+  text-align: center;
   font-size: 70px;
 }
 .current-day-temperature .icon-cloudy {
   padding-left: 20px;
 }
-.weather .next-days{}
+
 .weather .next-days p {
   margin: 0;
   display: inline-block;
@@ -36,15 +42,19 @@
 .weather .next-days a {
   display: block;
   line-height: 58px;
-  border-bottom: 1px solid #1f253d;
   -webkit-transition: background .3s;
   transition: background .3s;
+  text-decoration: none;
+  color: black;
+}
+.weather .next-days .windir {
+  border-bottom: 1px solid #1f253d;
 }
 .weather .next-days a:hover {
-  background: #50597b;
+  background: #ffa38c;
 }
 .weather .next-days a:hover .day {
-  color: #e64c65;
+  color: #000000;
 }
 .weather .next-days-date {
   padding-left: 20px;
@@ -52,7 +62,37 @@
 .weather .next-days-temperature {
   float: right;
   padding-right: 20px;
+  color: #000;
 }
 .weather .next-days-temperature .icon {
   padding-left: 10px;
+}
+.wind-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.entypo-light-up,
+.entypo-air,
+.entypo-cloud,
+.entypo-water,
+.entypo-cloud-thunder {
+  font-size: 50px;
+  margin: 30px;
+}
+.entypo-light-up {
+  color: #e6cf4c !important;
+}
+.entypo-air {
+  color: #616161 !important;
+}
+.entypo-cloud {
+  color: #33373d !important;
+}
+.entypo-water {
+  color: #5e7efd !important;
+}
+.entypo-cloud-thunder {
+  color: #9e830b !important;
 }
