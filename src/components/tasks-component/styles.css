@@ -77,9 +77,15 @@
   .todo-app-input, .btn-add {
     max-width: 100%;
   }
+  .mobile-wrapper {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
+  .iphone-border {
+    display: none;
+  }
   .resp-row {
     display: flex;
     flex-direction: column;
@@ -88,7 +94,7 @@
   .col-tasks {
     width: 100%;
     background-position: 50% 50%;
-    height: 40vh;
+    height: 50vh;
   }
   .tasks-wrapper {
     margin-top: 50px;
@@ -101,6 +107,11 @@
   .list-group {
     padding-top: 50px;
     width: 180px;
-    
+  }
+  .col-input {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
 }

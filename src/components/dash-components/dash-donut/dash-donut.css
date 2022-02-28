@@ -1,0 +1,23 @@
+
+.donut-title {
+  display: block;
+  line-height: 60px;
+  margin: 0;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #3368AF;
+  color: #fff;
+  font-size: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-bottom: 1px solid white;
+}
+
+.donut-chart {
+  background: #3368AF;
+  margin-bottom: 25px;
+  padding-top: 25px;
+}
+.apexcharts-legend .apexcharts-legend-series .apexcharts-legend-text {
+  color: #fff !important;
+}

@@ -55,6 +55,11 @@ export const TodoApp = () => {
           </div>
         </div>
         <div className="col-5 col-input">
+          <div className="mobile-wrapper">
+            <TodoAdd
+              handleAddTodo={ handleAddTodo }
+            />
+          </div>
           <div className="iphone-border">
             <span className="top left">
               <span className="ringer"></span>
@@ -70,7 +75,6 @@ export const TodoApp = () => {
               <span className="speaker"></span>
               <div className="screen">
                 <div className="home">
-              
                   <div className="top-bar">
                     <span className="signal">&#9679;&#9679;&#9679;&#9679;&#9679;</span>
                     <span className="wifi"><hr /></span>
