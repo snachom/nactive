@@ -12,7 +12,6 @@ export class RadialChart extends Component {
       series: [100, 55, 80, 17, 15],
     }
   }
-
   render() {
     return (
       <Chart 
