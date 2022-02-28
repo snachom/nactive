@@ -34,8 +34,6 @@ export const DashWeather = () => {
     setState(weather)
   }
 
-  console.log(state)
-
   return (
     <div className="weather block clear">
       <h2 className="heading2 titular">

@@ -67,7 +67,7 @@
 .nactive-dashboard {
 	/* background: #1f253d; */
 	/* background: #ececec; */
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(../../../public/assets/background/stains_1.jpeg);
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(../../../public/assets/background/clouds.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -1,5 +1,6 @@
 .covid-heading {
-  background: white;
+  background: #1B9BAA;
+  color: #fff !important;
 }
 
 .perspective {
@@ -25,6 +26,7 @@
 }
 .cov-icon {
   padding-right: 15px;
+  color: #fff !important;
 }
 .cov-input {
   display: none;
