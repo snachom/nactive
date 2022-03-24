@@ -1,57 +1,52 @@
 import { Component } from 'react';
 import Chart from 'react-apexcharts';
 
-export class PopChart extends Component {
+export class LineChart extends Component {
+  
   constructor(props) {
     super(props);
+
+    // console.log(this.props.com[0])
+    // const communities = this.props.com[0]
+    const communities = ['Almería', 'Cádiz', 'Cordoba', 'Granada', 'Huelva', 'Jaén', 'Málaga', 'Sevill', ]
+    const confirmed = this.props.conf[0]
+
     this.state = {
       options: {
         chart: {
-          background: '#f4f4f4',
-          foreColor: '#333',
+          id: "basic-bar"
         },
         xaxis: {
-          category: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+          categories: communities
         },
-        plotOptions: {
-          bar: {
-            horizontal: false,
-          }
-        },
-        fill: {
-          colors: ['#f44336']
-        },
-        dataLabels: {
-          enabled: false
-        },
-        title: {
-          text: 'OS AUDIENCE STATS',
-          align: 'center',
-          margin: 20,
-          offsetY: 20,
-          style: { 
-            fontSize: '18px',
-            color: '#333'
-          }
-        },
+        theme: {
+          palette: 'palette5'
+        }
       },
-      series: [{
-        name: 'data',
-        data: [30, 40, 35, 50, 49, 60, 70, 91]
-      }]
-    }
+      series: [
+        {
+          name: "COVID-19 confirmed",
+          data: confirmed
+        }
+      ]
+    };
   }
 
   render() {
     return (
-      <Chart 
-        options={this.state.options}
-        series={this.state.series}
-        type="line"
-        height="350"
-        width="100%"
-      />
-    )
+        <div className="row">
+          <div className="mixed-chart">
+            <Chart
+              options={this.state.options}
+              series={this.state.series}
+              type="bar"
+              height="280"
+              width="100%"
+            />
+          </div>
+        </div>
+
+    );
   }
 
 }

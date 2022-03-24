@@ -1,6 +1,7 @@
 .covid-heading {
   background: #1B9BAA;
   color: #fff !important;
+  font-weight: bold;
 }
 
 .perspective {
@@ -98,14 +99,14 @@
   margin-bottom: .5em;
 }
 .cov-confirmed,
-.cov-recovered {
+.cov-total {
   font-weight: bold;
 }
 .cov-confirmed{
   color: #EF476F;
 }
-.cov-recovered {
-  color: #47ef55;
+.cov-total {
+  color: #ff8800;
 }
 .cov-rec {
   align-self: center;

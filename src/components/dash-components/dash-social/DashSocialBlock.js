@@ -2,7 +2,7 @@ import './dash-social-block.css'
 
 export const DashSocialBlock = () => {
   return (
-    <ul className="unordered-list social horizontal-list block">
+    <ul className="unordered-list social horizontal-social-list block">
       <li className="facebook">
         <p className="icon"><span className="dash-span zocial-facebook"></span></p>
         <p className="number">248k</p>

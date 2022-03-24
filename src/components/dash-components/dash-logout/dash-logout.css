@@ -1,0 +1,49 @@
+
+.home-logout-wrapper {
+  height: 230px;
+  /* min-height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url('../../../../public/assets/background/yellow-stain.jpg'); */
+  background-color: #E64C65;
+  margin-bottom: 25px;
+}
+/* @media (min-width: 600px) {
+  .logout-wrapper {
+    min-width: 100%;
+    margin: 0;
+  }
+} */
+
+.home-logout-wrapper-inner {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1.3em 3.6em;
+  display: flex;
+  flex-flow: column;
+}
+/* @media (max-width: 600px) {
+  .logout-wrapper-inner {
+    padding: 2em 8em;
+  }
+} */
+
+.home-logout-wrapper-inner h2 {
+  font-family: 'Rubik Beastly', cursive;
+  font-size: 40px;
+}
+.home-logout-wrapper-inner span {
+  text-align: center;
+}
+
+.home-logout-wrapper-inner .btn-logout {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #000 !important;
+}
+.home-logout-wrapper-inner .btn-logout:hover {
+  color: #fff !important;
+}

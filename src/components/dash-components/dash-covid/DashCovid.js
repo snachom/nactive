@@ -14,24 +14,25 @@ export const DashCovid = (news) => {
     const today = new Date();
     var twoDigitMonth=((today.getMonth()+1)>=10) ? (today.getMonth()+1) : '0' + (today.getMonth()+1);
     const date = today.getFullYear()+'-'+twoDigitMonth+'-'+today.getDate();
-
+    const prevDate = today.getFullYear()+'-'+twoDigitMonth+'-'+(today.getDate()-3);
     const url = `https://api.covid19tracking.narrativa.com/api/${date}/country/spain/region/andalucia`
     const resp = await fetch( url )
     const data = await resp.json()
-    const regions = data.dates[date].countries.Spain.regions
+    // const regio = data.dates['2022-03-20'].countries.Spain.regions // API format
+    const regio = data.dates[date].countries.Spain.regions ? data.dates[date].countries.Spain.regions : data.dates[prevDate].countries.Spain.regions
 
-    const news = regions.map( cov => {
+    const news = regio.map( cov => {
       return {
         date: cov.date,
         id: cov.id,
         name: cov.name,
         andalucia_confirmed: cov.today_new_open_cases ? cov.today_new_open_cases : 0,
-        andalucia_recovered: cov.today_recovered ? cov.today_recovered : 0,
+        andalucia_total: cov.today_confirmed ? cov.today_confirmed : 0,
         subregion: cov.sub_regions.map( 
           subreg => { 
             return { 
               community: subreg.name,
-              community_confirmed: subreg.today_new_confirmed ? subreg.today_new_confirmed : 0,
+              community_confirmed: subreg.today_confirmed ? subreg.today_confirmed : 0,
               community_recovered: subreg.today_new_recovered ? subreg.today_new_recovered : 0,
             } 
           }
@@ -59,7 +60,7 @@ export const DashCovid = (news) => {
                 <input className="cov-input" type="radio" name="tabs" id="tab-bottom" /> 
                 <div className="cube">  
                   <div className="tab-cov-content cov-subregion"> 
-                    <span className="cov-rec">Recovered:</span>
+                    <span className="cov-rec">Today recovered:</span>
                       {
                         cov.subregion.map( (subreg, i) => {
                           return (
@@ -79,12 +80,12 @@ export const DashCovid = (news) => {
                     <p>Today confirmed: 
                       <span className='cov-confirmed'>{' '+ cov.andalucia_confirmed }</span>
                     </p>
-                    <p>Today recovered: 
-                      <span className='cov-recovered'>{' '+  cov.andalucia_recovered }</span>
+                    <p>Today total confirmed: 
+                      <span className='cov-total'>{' '+  cov.andalucia_total }</span>
                     </p>
                   </div>
                   <div className="tab-cov-content cov-subregion cov-last-subr"> 
-                    <span className="cov-rec">Today open cases:</span>
+                    <span className="cov-rec">Today total cases:</span>
                       {
                         cov.subregion.map( (subreg, i) => {
                           return (

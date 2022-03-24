@@ -67,7 +67,8 @@
 .nactive-dashboard {
 	/* background: #1f253d; */
 	/* background: #ececec; */
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(../../../public/assets/background/clouds.jpeg);
+  /* background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(../../../public/assets/background/clouds.jpeg); */
+  background: url(../../../public/assets/background/bg-gradient.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -231,7 +232,7 @@
     grid-row-gap: 0px;
     margin: 0 auto;
     padding-top: 3em;
-    height: 2000px;
+    height: 1600px;
     width: 1200px;
   }
 }
@@ -325,4 +326,175 @@
 .calendar-day {
   height: 320px;
   background: #3468af;
+}
+
+  /*································································*/
+	/*······················· THEMING CONTRAST ·······················*/
+  /*································································*/
+  /*··············TODO: IMPLEMENT BUTTON FOR THEMING················*/
+  /*································································*/
+  
+.dash-header { 
+  border: 1px solid #000;
+}
+/* .covid-news, */
+/* .dash-donut, */
+/* .menu-box, */
+/* .media, */
+.calendar-day,
+.dash-construction,
+.dash-header,
+.dash-icons-loaders,
+.loading,
+.home-logout-wrapper,
+.profile,
+.weather,
+.titular,
+.block {
+  /* background-color: #fff; */
+  background-color: rgba(255,255,255,0.5) !important;
+}
+.home-logout-wrapper-inner {
+  background-color: transparent;
+}
+/* HEADER MENU */
+.header-menu-tab,
+.header-menu-tab .icon,
+.profile-menu .paragraph-text {
+  color: #000 !important;
+}
+/* MENU BOX */
+.menu-box .titular {
+  border-bottom: 2px solid #fff;
+}
+.menu-box-menu li {
+  border-bottom: 1px solid rgb(83, 83, 83);
+}
+/* PROFILE */
+.menu-box-menu li {
+  background-color: rgba(255,255,255,0.5);
+}
+.menu-box .titular,
+.menu-box-menu .icon {
+  color: #000;
+}
+/* DONUT CHART */
+.donut-chart,
+.donut-title {
+  background-color: rgba(255,255,255,0.5);
+  color: #000;
+}
+.apexcharts-legend .apexcharts-legend-series .apexcharts-legend-text {
+  color: #000 !important;
+}
+/* BAR CHART */
+.dash-line-title,
+.dash-line .apexcharts-canvas {
+  background-color: rgba(255,255,255,0.5) !important;
+  color: #000;
+}
+/* LOADER ICONS */
+.loaders-title {
+  color: #000;
+}
+.loaders-container svg path,
+.loaders-container svg rect{
+  fill: #38485E;
+}
+/* COVID NEWS */
+.covid-heading {
+  background-color: rgba(255,255,255,0.5);
+  color: #000 !important;
+}
+.perspective {
+  margin-top: 3px;
+}
+.cov-icon {
+  color: #000 !important;
+}
+.tab-cov-content,
+.cov-rec {
+  color: #000;
+}
+.tab-cov-content:nth-child(2) {
+  background-color: rgba(255,255,255,0.5);
+}
+.tab-cov-content:nth-child(1),
+.tab-cov-content:nth-child(3) {
+  background-color: rgba(255,255,255,1);
+}
+.cov-tab:nth-child(1),
+.cov-tab:nth-child(2),
+.cov-tab:nth-child(3) {
+  background-color: rgba(255,255,255,0.5);
+  color: #000;
+}
+/* WEATHER BLOCK */
+.weather .titular,
+.weather .current-day {
+  background-color: transparent !important;
+  color: #000;
+}
+.weather .titular {
+  border-bottom: 1px solid #fff;
+}
+.windir {
+  border-top: 1px solid #000;
+}
+/* MEDIA BLOCK */
+.dash-media-title {
+  background-color: transparent;
+  color: #000;
+}
+/* CONSTRUCTION BLOCK */
+.construction-title,
+.dash-construction .text ul li {
+  color: #000;
+}
+/* DAY CALENDAR */
+.current-day {
+  background-color: rgba(255,255,255,0.5) !important;
+  color: #000;
+}
+.current-day-date {
+  color: #000 !important;
+}
+.calendar-day .button-day-before, 
+.calendar-day .button-day-after {
+  background: transparent;
+}
+.calendar-day .add-event.button {
+  background-color: rgba(255,255,255,1);
+  color: #000;
+}
+.calendar-day .arrow-btn .icon {
+  color: #000;
+  border: 2px solid #000;
+}
+.calendar-day .weekday,
+.calendar-day .the-day {
+  background: transparent !important;
+  color: #000;
+}
+/* MONTH CALENDAR */
+.react-calendar__viewContainer {
+  background: transparent !important;
+}
+.react-calendar__navigation {
+  border-bottom: 1px solid #fff;
+}
+.react-calendar,
+.react-calendar__month-view, 
+.react-calendar__navigation__arrow,.react-calendar__navigation__prev-button,
+.react-calendar__navigation__label,
+.react-calendar__century-view__decades__decade,
+.react-calendar__year-view__months__month, 
+.react-calendar__decade-view__years__year,
+.react-calendar__month-view__days__day {
+  background-color: rgba(255,255,255,0) !important;
+}
+.react-calendar__navigation__arrow,
+.react-calendar__navigation__label,
+.react-calendar__month-view__weekdays__weekday abbr[title] {
+  color: #000 !important;
 }

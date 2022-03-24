@@ -1,7 +1,6 @@
-
-
 .calendar-day .titular {
   background: #1a4e95;
+  color: #fff;
 }
 .calendar-day .arrow-btn:hover {
   background: #16417E;

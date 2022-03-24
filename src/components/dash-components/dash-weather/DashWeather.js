@@ -59,6 +59,8 @@ export const DashWeather = () => {
                         return <span className="dash-span entypo-water"></span>
                       case 'Moderate or heavy rain shower':
                         return <span className="dash-span entypo-cloud-thunder"></span>
+                      case 'Moderate or heavy rain with thunder':
+                        return <span className="dash-span entypo-cloud-thunder"></span>
                       default:
                         return <span className="dash-span entypo-adjust"></span>
                     }
