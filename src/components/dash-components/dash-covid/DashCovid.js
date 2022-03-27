@@ -15,12 +15,14 @@ export const DashCovid = (news) => {
     var twoDigitMonth=((today.getMonth()+1)>=10) ? (today.getMonth()+1) : '0' + (today.getMonth()+1);
     const date = today.getFullYear()+'-'+twoDigitMonth+'-'+today.getDate();
     const prevDate = today.getFullYear()+'-'+twoDigitMonth+'-'+(today.getDate()-3);
-    const url = `https://api.covid19tracking.narrativa.com/api/${date}/country/spain/region/andalucia`
+    const availableDate = date ? date : prevDate;
+    
+    const url = `https://api.covid19tracking.narrativa.com/api/${availableDate}/country/spain/region/andalucia`
     const resp = await fetch( url )
     const data = await resp.json()
     // const regio = data.dates['2022-03-20'].countries.Spain.regions // API format
     const regio = data.dates[date].countries.Spain.regions ? data.dates[date].countries.Spain.regions : data.dates[prevDate].countries.Spain.regions
-
+    
     const news = regio.map( cov => {
       return {
         date: cov.date,
@@ -32,13 +34,13 @@ export const DashCovid = (news) => {
           subreg => { 
             return { 
               community: subreg.name,
-              community_confirmed: subreg.today_confirmed ? subreg.today_confirmed : 0,
+              community_confirmed: subreg.today_new_confirmed ? subreg.today_new_confirmed : 0,
               community_recovered: subreg.today_new_recovered ? subreg.today_new_recovered : 0,
             } 
           }
-        )
-      }
-    })
+          )
+        }
+      })
     setData( news )
   }
 
@@ -91,7 +93,7 @@ export const DashCovid = (news) => {
                           return (
                             <div key={i} className="cov-content">
                               <p className="cov-subregion">{ subreg.community }
-                                <span className="cov-subregion-recovered">{ subreg.community_confirmed }</span>
+                                <span className="cov-subregion-confirmed">{ subreg.community_confirmed }</span>
                               </p>
                             </div>
                           )

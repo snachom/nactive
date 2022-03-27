@@ -119,7 +119,8 @@
   align-items: stretch;
   justify-content: center;
 }
-.cov-subregion-recovered{
+.cov-subregion-recovered,
+.cov-subregion-confirmed {
   color: #ffffff;
   font-weight: bold;
   padding-left: 1em;

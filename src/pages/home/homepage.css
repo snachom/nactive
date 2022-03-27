@@ -406,6 +406,12 @@
   background-color: rgba(255,255,255,0.5);
   color: #000 !important;
 }
+.cov-subregion .cov-subregion-recovered {
+  color: rgb(6, 175, 20) !important;
+}
+.cov-subregion .cov-subregion-confirmed {
+  color: rgb(255, 15, 15) !important;
+}
 .perspective {
   margin-top: 3px;
 }
