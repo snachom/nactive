@@ -7,7 +7,7 @@ import { PublicRoute } from './PublicRoute';
 
 export const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/repo-name" >
       <Routes>
         <Route path="/login" element={
           <PublicRoute>
