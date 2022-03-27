@@ -18,7 +18,7 @@ export const DashHeader = () => {
       <div className="profile-menu">
         <p className="paragraph-text">{user.name} <Link to="#26"></Link></p>
         <div className="profile-picture small-profile-picture">
-          <img width="40px" alt="Charlino Brown" src="/assets/resources/charlie.jpg" />
+          <img width="40px" alt="Charlino Brown" src="/nactive/assets/resources/charlie.jpg" />
         </div>
       </div>
     </header>

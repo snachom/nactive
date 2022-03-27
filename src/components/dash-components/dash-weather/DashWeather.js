@@ -14,7 +14,7 @@ export const DashWeather = () => {
 
   const getWeather = async() => {
 
-    const url = `http://api.weatherapi.com/v1/current.json?key=2f04bca6470d46368fa192407222202&q=Huelva&aqi=no`
+    const url = `https://api.weatherapi.com/v1/current.json?key=2f04bca6470d46368fa192407222202&q=Huelva&aqi=no`
     const resp = await fetch( url )
     const data = await resp.json()
     const weatherCast = data.current
