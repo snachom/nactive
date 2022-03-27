@@ -7,12 +7,11 @@ export class RadialChart extends Component {
 
     this.state = {
       options: {
-        labels: ["Drupal", "SASS", "Javascript", "HTML", "Git"],
+        labels: ["React", "SASS", "Javascript", "HTML", "Git"],
       },
-      series: [60, 55, 41, 17, 15],
+      series: [100, 55, 80, 17, 15],
     }
   }
-
   render() {
     return (
       <Chart 

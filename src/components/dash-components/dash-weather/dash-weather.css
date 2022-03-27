@@ -73,15 +73,18 @@
   justify-content: space-between;
 }
 
+.entypo-adjust,
 .entypo-light-up,
 .entypo-air,
 .entypo-cloud,
 .entypo-water,
 .entypo-cloud-thunder {
-  font-size: 50px;
+  font-size: 60px;
   margin: 30px;
 }
-.entypo-light-up {
+
+.entypo-light-up:before,
+.entypo-adjust:before {
   color: #e6cf4c !important;
 }
 .entypo-air {
@@ -94,5 +97,5 @@
   color: #5e7efd !important;
 }
 .entypo-cloud-thunder {
-  color: #9e830b !important;
+  color: #ffd000 !important;
 }

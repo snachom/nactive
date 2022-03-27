@@ -66,6 +66,52 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     │   ├── authContext.js
     │   └── authReducer.js
     ├── components
+    │   ├── dash-components
+    │   │   ├── dash-calendar
+    │   │   │   ├── DashCalendar.js
+    │   │   │   └── dash-calendar.css
+    │   │   ├── dash-construction
+    │   │   │   ├── DashConstruction.js
+    │   │   │   └── dash-construction.css
+    │   │   ├── dash-covid
+    │   │   │   ├── DashCovid.js
+    │   │   │   └── dash-covid.css
+    │   │   ├── dash-donut
+    │   │   │   ├── DashDonut.js
+    │   │   │   ├── PopChart.js
+    │   │   │   └── dash-donut.css
+    │   │   ├── dash-header
+    │   │   │   ├── DashHeader.js
+    │   │   │   └── dash-header.css
+    │   │   ├── dash-line-chart
+    │   │   │   ├── DashLineChart.js
+    │   │   │   ├── LineChart.js
+    │   │   │   └── dash-line-chart.css
+    │   │   ├── dash-loader-icons
+    │   │   │   ├── DashLoaderIcons.js
+    │   │   │   └── dash-loader-icons.css
+    │   │   ├── dash-loading
+    │   │   │   ├── DashLoading.js
+    │   │   │   └── dash-loading.css
+    │   │   ├── dash-logout
+    │   │   │   ├── DashLogout.js
+    │   │   │   └── dash-logout.css
+    │   │   ├── dash-media
+    │   │   │   ├── DashMedia.js
+    │   │   │   ├── YoutubeMedia.js
+    │   │   │   └── dash-media.css
+    │   │   ├── dash-menulinks
+    │   │   │   ├── DashMenuLinks.js
+    │   │   │   └── dash-menu-links.css
+    │   │   ├── dash-profile
+    │   │   │   ├── DashProfile.js
+    │   │   │   └── dash-profile.css
+    │   │   ├── dash-social
+    │   │   │   ├── DashSocialBlock.js
+    │   │   │   └── dash-social-block.css
+    │   │   └── dash-weather
+    │   │       ├── DashWeather.js
+    │   │       └── dash-weather.css
     │   ├── gifs-component
     │   │   ├── AddCategory.js
     │   │   ├── GifExpertApp.js
@@ -91,24 +137,36 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     │   │   └── search
     │   │       ├── SearchScreen.js
     │   │       └── search-results.css
+    │   ├── smash
+    │   │   ├── Smash.js
+    │   │   ├── SmashCharacters.js
+    │   │   ├── SmashDetail.js
+    │   │   ├── smash-detail.css
+    │   │   └── smash.css
     │   ├── tasks-component
     │   │   ├── TodoAdd.js
     │   │   ├── TodoApp.js
     │   │   ├── TodoList.js
     │   │   ├── TodoListItem.js
+    │   │   ├── iphone.css
     │   │   ├── styles.css
     │   │   └── todoReducer.js
     │   └── ui
     │       ├── Navbar.js
     │       └── navbar.css
     ├── data
-    │   └── heroes.js
+    │   ├── heroes.js
+    │   └── smashCharacters.js
     ├── helpers
+    │   ├── getCovidNews.js
     │   ├── getGifs.js
     │   ├── getHeroById.js
     │   ├── getHeroesByName.js
-    │   └── getHeroesByPublisher.js
+    │   ├── getHeroesByPublisher.js
+    │   ├── getSmashByCharacter.js
+    │   └── getSmashById.js
     ├── hooks
+    │   ├── useDate.js
     │   ├── useFetchGifs.js
     │   └── useForm.js
     ├── index.css
@@ -122,8 +180,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     │       └── login.css
     ├── routers
     │   ├── AppRouter.js
-    │   └── DashboardRoutes.js
+    │   ├── DashboardRoutes.js
+    │   ├── HomeRouter.js
+    │   ├── PrivateRoute.js
+    │   └── PublicRoute.js
     ├── setupTests.js
     └── types
         └── types.js
+
 ```

@@ -65,9 +65,7 @@
 .profile-options a:hover.github .icon {
   color: #702A87;
 }
-.profile-options .icon {
-  /* padding-right: 20px; */
-}
+
 .profile-options .linkedin {
   border-top: 4px solid #2767B2;
 }
@@ -100,4 +98,4 @@
   border: 2px solid white;
   width: 40px;
   height: 40px;
-  }
+}

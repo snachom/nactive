@@ -6,6 +6,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 25px;
+  border-radius: 5px;
 }
 .menu-box .titular {
   background: #6CB9AD;

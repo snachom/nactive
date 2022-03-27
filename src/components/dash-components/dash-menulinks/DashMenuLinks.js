@@ -3,7 +3,7 @@ import './dash-menu-links.css'
 
 export const DashMenuLinks = () => {
   return (
-    <div className="menu-box block">
+    <div className="menu-box blocks">
       <h2 className="heading2 titular">REACTIVE PROJECTS</h2>
       <ul className="unordered-list menu-box-menu">
         <li>
