@@ -1,12 +1,21 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './dash-menu-links.css'
 
 export const DashMenuLinks = () => {
+  const navigate = useNavigate()
+  const handlemenu = () => { 
+    navigate('/gifs', { replace: true }) 
+  }
+
   return (
     <div className="menu-box blocks">
       <h2 className="heading2 titular">REACTIVE PROJECTS</h2>
       <ul className="unordered-list menu-box-menu">
         <li>
+          <button 
+            className="btn btn-outline-dark btn-logout"
+            onClick={ handlemenu }
+          ></button>
           <Link className="dash-link menu-box-tab" to="/gifs" target="_blank">
             <span className="dash-span icon entypo-flashlight scnd-font-color"></span>
               Gifs App
