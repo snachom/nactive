@@ -7,7 +7,7 @@ import { PublicRoute } from './PublicRoute';
 
 export const AppRouter = () => {
   return (
-    <BrowserRouter basename="/nactive" >
+    <BrowserRouter>
       <Routes>
         <Route path="/login" element={
           <PublicRoute>
