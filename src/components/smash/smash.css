@@ -9,7 +9,9 @@
   background-image: url(../../../public/assets/background/nintendo.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 130vh;
+  min-height: 135vh;
+  margin-bottom: 0;
+  margin-block-end: 0;
 }
 
 .smash-img-wrapper {
