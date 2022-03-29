@@ -1,60 +1,60 @@
-import { Link, NavLink } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import './dash-menu-links.css'
 
 export const DashMenuLinks = () => {
-
-  // <div className="navbar-nav">
-  // <NavLink
-  //   className={ ( {isActive} ) => { return "nav-submenu nav-item nav-link + (isActive ? 'active' : '')"} }
-  //   to="/gifs" >
-  //   Gifs
-  // </NavLink>
-  // <NavLink
-  //   className={ ( {isActive} ) => { return "nav-submenu nav-item nav-link + (isActive ? 'active' : '')"} }
-  //   to="/tasks" >
-  //   Tasks
-  // </NavLink>
-  // <NavLink
-  //   className={ ( {isActive} ) => { return "nav-submenu nav-item nav-link + (isActive ? 'active' : '')"} }
-  //   to="/smash" >
-  //   Smash
-  // </NavLink>
-
+  const navigate = useNavigate()
+  // This is for production build as it
+  // does not allow SPA
+  const handleGifs = () => { 
+    navigate('/gifs', { replace: true }) 
+  }
+  const handleTasks = () => { 
+    navigate('/tasks', { replace: true }) 
+  }
+  const handleSmash = () => { 
+    navigate('/smash', { replace: true }) 
+  }
+  const handleMarvel = () => { 
+    navigate('/hero/marvel', { replace: true }) 
+  }
+  const handleDC = () => { 
+    navigate('/hero/dc', { replace: true }) 
+  }
 
   return (
     <div className="menu-box blocks">
       <h2 className="heading2 titular">REACTIVE PROJECTS</h2>
       <ul className="unordered-list menu-box-menu">
         <li>
-          <NavLink className="dash-link menu-box-tab" to="/gifs" target="_blank">
+          <button className="btn-menu dash-link menu-box-tab" onClick={ handleGifs } >
             <span className="dash-span icon entypo-flashlight scnd-font-color"></span>
               Gifs App
-          </NavLink>                           
+          </button>                         
         </li>
         <li>
-          <Link className="dash-link menu-box-tab" to="/tasks" target="_blank">
+          <button className="btn-menu dash-link menu-box-tab" onClick={ handleTasks } >
             <span className="dash-span icon entypo-newspaper scnd-font-color"></span>
               Tasks App
-          </Link>                            
+          </button>                         
         </li>
         <li>
-          <Link className="dash-link menu-box-tab" to="/smash" target="_blank">
+          <button className="btn-menu dash-link menu-box-tab" onClick={ handleSmash } >
             <span className="dash-span icon entypo-alert scnd-font-color"></span>
               Smash Bros
-          </Link>                            
+          </button>                         
         </li>
         <li>
-          <Link className="dash-link menu-box-tab" to="/hero/marvel" target="_blank">
+          <button className="btn-menu dash-link menu-box-tab" onClick={ handleMarvel } >
             <span className="dash-span icon entypo-qq scnd-font-color"></span>
               Marvel
-          </Link>
+          </button>                         
         </li>
         <li>
-          <Link className="dash-link menu-box-tab" to="/hero/dc" target="_blank">
+          <button className="btn-menu dash-link menu-box-tab" onClick={ handleDC } >
             <span className="dash-span icon entypo-renren scnd-font-color"></span>
               DC
-          </Link>
-        </li>                        
+          </button>                         
+        </li>                       
       </ul>
     </div>
   )

@@ -19,7 +19,7 @@ export const GifExpertApp = ({ defaultCategories = ['Charlie Brown'] }) => {
       </div>
       <AddCategory setCategories={ setCategories } />
 
-      <ol>
+      <ul>
         { 
           categories.map( category => 
             <GifGrid 
@@ -28,7 +28,7 @@ export const GifExpertApp = ({ defaultCategories = ['Charlie Brown'] }) => {
             />
           )
         }
-      </ol>
+      </ul>
     </div>
   )
 };

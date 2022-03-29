@@ -7,7 +7,7 @@ export const Smash = ({
 }) => {
   return (
     <>
-      <div className="container app-container">
+      <div className="app-container smash-container">
         <div className="smash-logo-container">
           <div className="smash-img-wrapper">
             <img className="smash-logo" src="/nactive/assets/smash/sbb_logo.png" alt='smash-logo'/>

@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "./static/css/main.1ef08431.css",
-    "main.js": "./static/js/main.e214af96.js",
+    "main.css": "./static/css/main.9f301917.css",
+    "main.js": "./static/js/main.6149831d.js",
+    "static/media/bg2.jpg": "./static/media/bg2.799a30b8cc5a53e77d64.jpg",
     "static/media/yellow-stain.jpg": "./static/media/yellow-stain.76ce7642626c08cf14a6.jpg",
+    "static/media/black.jpeg": "./static/media/black.f1b092c401ee6fd834ea.jpeg",
     "static/media/bg-gradient.jpg": "./static/media/bg-gradient.d611d7a6499530b1c89f.jpg",
     "static/media/ballon.jpg": "./static/media/ballon.12616b172e3efbe37432.jpg",
+    "static/media/nintendo.jpeg": "./static/media/nintendo.23938650b62d075a2b2d.jpeg",
     "static/media/nintendo-bg.png": "./static/media/nintendo-bg.553ab5ee51ae78faec4e.png",
-    "static/media/paper.jpeg": "./static/media/paper.1f9641e87534881151c5.jpeg",
+    "static/media/paper-p.png": "./static/media/paper-p.5ba873893646b18b1175.png",
     "index.html": "./index.html",
-    "main.1ef08431.css.map": "./static/css/main.1ef08431.css.map",
-    "main.e214af96.js.map": "./static/js/main.e214af96.js.map"
+    "main.9f301917.css.map": "./static/css/main.9f301917.css.map",
+    "main.6149831d.js.map": "./static/js/main.6149831d.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ef08431.css",
-    "static/js/main.e214af96.js"
+    "static/css/main.9f301917.css",
+    "static/js/main.6149831d.js"
   ]
 }

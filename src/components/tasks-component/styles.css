@@ -6,7 +6,7 @@
 }
 
 .col-tasks {
-  background-image: url(../../../public/assets/background/paper.jpeg);
+  background-image: url(../../../public/assets/background/paper-p.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60% 45%;
@@ -15,7 +15,7 @@
 
 .tasks-wrapper {
   position: relative;
-  margin-top: 220px;
+  margin-top: 120px;
   margin-left: 250px;
 }
 .tasks-wrapper h2, .tasks-wrapper small {
@@ -105,13 +105,30 @@
     margin-bottom: 0;
   }
   .list-group {
-    padding-top: 50px;
-    width: 180px;
+    padding-top: 30px;
+    padding-right: 0;
+    width: 146px;
+  }
+  .list-group-item {
+    padding-left: 0;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .col-tasks .tasks-wrapper {
+    top: 10px;
+    left: 0;
+    margin-left: 70px;
+    font-size: 12px;
+  }
+  .col-tasks button {
+    font-size: 12px;
+    padding-left: 0;
   }
   .col-input {
     width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    min-height: 40vh;
   }
 }

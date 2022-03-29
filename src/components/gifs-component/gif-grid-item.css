@@ -8,8 +8,10 @@
   justify-content: center;
   margin-bottom: 10px;
   margin-right: 10px;
-  max-width: 40%;
+  /* max-width: 40%; */
+  max-width: 260px;
   overflow: hidden;
+  background: #fff;
 }
 
 .gif-card img {
@@ -21,4 +23,8 @@
 .gif-card p {
   text-align: center;
   padding: 5px;
+  background-color: #fff;
+  margin-bottom: 0;
+  margin-block-end: 0;
+  padding: 20px;
 }
