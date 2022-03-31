@@ -7,7 +7,8 @@ export const DashProfile = () => {
         <span className="dash-span icon entypo-plus scnd-font-color"></span>
       </a>
       <div className="profile-picture big-profile-picture clear">
-        <img width="150px" alt="Nacho" src="/nactive/assets/resources/nacho-yellow.jpg" />
+        <img width="150px" alt="Nacho" src="/nactive/assets/resources/nacho-pink.png" className="img-pink" />
+        <img width="150px" alt="Nacho" src="/nactive/assets/resources/nacho-yellow.jpg" className="img-yellow" />
       </div>
       <h1 className="heading1 user-name">@nachoxtacks</h1>
       <div className="profile-description">

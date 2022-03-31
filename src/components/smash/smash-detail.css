@@ -65,6 +65,11 @@
   z-index: 1;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .avatarcontainer {
+    top: 28%;
+  }
+}
 .avatarcontainer:hover > .hover {
   opacity: 1; 
 }

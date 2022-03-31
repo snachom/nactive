@@ -2,7 +2,21 @@
     /*········· FIRST BLOCK ·········*/
     /*········ PROFILE BLOCK ········*/
     /*·······························*/
-   
+
+.big-profile-picture .img-pink {
+  display: block;
+}
+.big-profile-picture .img-yellow {
+  display: none;
+}
+@media (min-width: 768px) {
+  .big-profile-picture .img-pink {
+    display: none;
+  }
+  .big-profile-picture .img-yellow {
+    display: block !important;
+  }
+}
 .add-button .icon {
   float: right;
   line-height: 18px;
