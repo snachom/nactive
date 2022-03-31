@@ -2,7 +2,7 @@ import './dash-loading.css'
 
 export const DashLoading = () => {
   return (
-    <div className="loading block"> 
+    <div className="fblock loading block"> 
       <div className="progress-bar downloading"></div>
       <p className="paragraph-text">
         <span className="dash-span icon fontawesome-cloud-download scnd-font-color"></span>Downloading...

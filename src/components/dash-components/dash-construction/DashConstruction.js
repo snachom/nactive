@@ -2,7 +2,7 @@ import './dash-construction.css'
 
 export const DashConstruction = () => {
   return (
-    <div className="dash-construction">
+    <div className="fblock dash-construction">
       <h2 className="construction-title">BLOCK UNDER CONSTRUCTION</h2>
       <div className="const-wrapper">
         <div className="sun"></div>

@@ -1,3 +1,12 @@
+
+.dash-header { 
+  margin-top: 10px;
+}
+@media (min-width: 600px) {
+  .dash-header { 
+    margin-top: 0;
+  }
+}
 .header-menu {
   font-size: 17px;
   line-height: 80px;

@@ -45,7 +45,7 @@ export const DashCovid = (news) => {
   }
 
   return (
-    <div className="covid-news">
+    <div className="fblock covid-news">
       <h2 className="heading2 titular covid-heading">
         <span className="dash-span icon entypo-bell cov-icon"></span> LATEST COVID NEWS
       </h2>

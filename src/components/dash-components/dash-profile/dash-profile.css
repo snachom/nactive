@@ -26,9 +26,6 @@
   margin: 0 auto;
   text-align: center;
 }
-.profile-options {
-  padding-top: 23px;
-}
 .profile-options li:nth-child(2) {
   border-left: 2px solid #1f253d;
   border-right: 2px solid #1f253d;
@@ -39,17 +36,12 @@
 
 .profile-options a {
   display: block;	
-  width: 123px;				
+  /* flex: 1 1 100%;		 */
   /* width: 99px; */
   line-height: 60px;
   text-align: center;
   -webkit-transition: background .3s;
   transition: background .3s;				
-}
-@media (min-width: 600px) {
-  .profile-options a {
-    width: 126px;
-  }
 }
 
 .profile-options a:hover {
@@ -98,4 +90,12 @@
   border: 2px solid white;
   width: 40px;
   height: 40px;
+}
+
+.horizontal-list-profile {
+  display: flex;
+  flex-direction: row;
+}
+.horizontal-list-profile li {
+  flex: 1 1 100%;
 }

@@ -22,7 +22,7 @@ export const DashMenuLinks = () => {
   }
 
   return (
-    <div className="menu-box blocks">
+    <div className="fblock menu-box blocks">
       <h2 className="heading2 titular">REACTIVE PROJECTS</h2>
       <ul className="unordered-list menu-box-menu">
         <li>

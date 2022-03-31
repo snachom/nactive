@@ -8,7 +8,7 @@ export const DashHeader = () => {
   const { user } = useContext(AuthContext)
   
   return (
-    <header className="dash-header block">
+    <header className="fblock dash-header block">
       <ul className="unordered-list header-menu horizontal-list">
         <li>
           <Link className="dash-link header-menu-tab" to="#"><span className="dash-span icon entypo-cog scnd-font-color"></span>Account</Link>

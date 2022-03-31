@@ -28,7 +28,7 @@
 }
 .current-day-temperature {
   text-align: center;
-  font-size: 70px;
+  font-size: 47px;
 }
 .current-day-temperature .icon-cloudy {
   padding-left: 20px;
@@ -37,7 +37,7 @@
 .weather .next-days p {
   margin: 0;
   display: inline-block;
-  font-size: 16px;
+  font-size: 13px;
 }
 .weather .next-days a {
   display: block;
@@ -79,7 +79,7 @@
 .entypo-cloud,
 .entypo-water,
 .entypo-cloud-thunder {
-  font-size: 60px;
+  font-size: 48px;
   margin: 30px;
 }
 
@@ -98,4 +98,22 @@
 }
 .entypo-cloud-thunder {
   color: #ffd000 !important;
+}
+
+@media (min-width: 600px) {
+  .current-day-temperature {
+    font-size: 70px;
+  }
+  .weather .next-days p {
+    font-size: 16px;
+  }
+  .entypo-adjust,
+  .entypo-light-up,
+  .entypo-air,
+  .entypo-cloud,
+  .entypo-water,
+  .entypo-cloud-thunder {
+    font-size: 60px;
+    margin: 30px;
+  }
 }

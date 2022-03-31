@@ -6,7 +6,7 @@ export const DashCalendar = () => {
   const [handleToday, handleDayAfter, handleDayBefore, digitDate, stringDate] = useDate()
 
   return (
-    <div className="calendar-day block">
+    <div className="fblock calendar-day block">
       <div className="arrow-btn-container">
 
         <button className="dash-link arrow-btn left button-day-before" onClick={handleDayBefore}>

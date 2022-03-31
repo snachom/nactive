@@ -35,7 +35,7 @@ export const DashWeather = () => {
   }
 
   return (
-    <div className="weather block clear">
+    <div className="fblock weather block clear">
       <h2 className="heading2 titular">
         <span className="dash-span icon entypo-location">
         </span><strong>ANDALUCÍA / HUELVA</strong>

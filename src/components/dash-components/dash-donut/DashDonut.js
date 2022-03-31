@@ -3,7 +3,7 @@ import './dash-donut.css'
 
 export const DashDonut = () => {
   return (
-    <div className="dash-donut">
+    <div className="fblock dash-donut">
       <h2 className="donut-title">TECHNOLOGIES</h2>
       <div className="donut-chart">
         <RadialChart />

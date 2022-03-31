@@ -8,13 +8,14 @@
   /* background-image: url('../../../../public/assets/background/yellow-stain.jpg'); */
   background-color: #E64C65;
   margin-bottom: 25px;
+  width: 94%;
+  border-radius: 5px;
 }
-/* @media (min-width: 600px) {
-  .logout-wrapper {
-    min-width: 100%;
-    margin: 0;
+@media (min-width: 600px) {
+  .home-logout-wrapper {
+    width: 100%;
   }
-} */
+}
 
 .home-logout-wrapper-inner {
   background-color: white;

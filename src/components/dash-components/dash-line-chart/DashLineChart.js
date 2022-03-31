@@ -30,7 +30,7 @@ export const DashLineChart = () => {
   })
 
   return (
-    <div className="dash-line">
+    <div className="fblock dash-line">
       <div className="line-chart">
         <h2 className="dash-line-title">COVID STATUS</h2>
         <LineChart com={communities} conf={confirmed} />

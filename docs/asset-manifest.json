@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.89769f8e.css",
-    "main.js": "./static/js/main.6149831d.js",
+    "main.css": "./static/css/main.728c420a.css",
+    "main.js": "./static/js/main.1c3267fa.js",
     "static/media/bg2.jpg": "./static/media/bg2.799a30b8cc5a53e77d64.jpg",
     "static/media/yellow-stain.jpg": "./static/media/yellow-stain.76ce7642626c08cf14a6.jpg",
     "static/media/black.jpeg": "./static/media/black.f1b092c401ee6fd834ea.jpeg",
@@ -9,13 +9,13 @@
     "static/media/ballon.jpg": "./static/media/ballon.12616b172e3efbe37432.jpg",
     "static/media/nintendo.jpeg": "./static/media/nintendo.23938650b62d075a2b2d.jpeg",
     "static/media/nintendo-bg.png": "./static/media/nintendo-bg.553ab5ee51ae78faec4e.png",
-    "static/media/paper-p.png": "./static/media/paper-p.5ba873893646b18b1175.png",
+    "static/media/paper-cut.png": "./static/media/paper-cut.4d9555633d4b718e0dd3.png",
     "index.html": "./index.html",
-    "main.89769f8e.css.map": "./static/css/main.89769f8e.css.map",
-    "main.6149831d.js.map": "./static/js/main.6149831d.js.map"
+    "main.728c420a.css.map": "./static/css/main.728c420a.css.map",
+    "main.1c3267fa.js.map": "./static/js/main.1c3267fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.89769f8e.css",
-    "static/js/main.6149831d.js"
+    "static/css/main.728c420a.css",
+    "static/js/main.1c3267fa.js"
   ]
 }

@@ -2,7 +2,7 @@ import './dash-profile.css'
 
 export const DashProfile = () => {
   return (
-    <div className="profile block">
+    <div className="fblock profile block">
       <a className="dash-link add-button" href="https://twitter.com/nachoxtacks" target="_blank" rel="noreferrer">
         <span className="dash-span icon entypo-plus scnd-font-color"></span>
       </a>
@@ -13,7 +13,7 @@ export const DashProfile = () => {
       <div className="profile-description">
         <p className="scnd-font-color">Front End Web Developer</p>
       </div>
-      <ul className="unordered-list profile-options horizontal-list">
+      <ul className="unordered-list profile-options horizontal-list-profile">
         <li>
           <a className="dash-link linkedin" href="https://www.linkedin.com/in/nachosalas/" target="_blank" rel="noreferrer">
             <p className="paragraph-text">

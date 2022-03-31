@@ -15,7 +15,7 @@ export const DashLogout = () => {
   }
 
   return (
-    <div className="container home-logout-wrapper">
+    <div className="fblock container home-logout-wrapper">
       <div className="home-logout-wrapper-inner">
         <h2>LOGOUT</h2>
 

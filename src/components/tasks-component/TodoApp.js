@@ -23,21 +23,18 @@ export const TodoApp = () => {
       payload: newTodo
     })
   }
-
   const handleDelete = ( todoId ) => {
     dispatch({
       type: 'delete',
       payload: todoId
     })
   }
-
   const handleToggle = ( todoId ) => {
     dispatch({
       type: 'toggle',
       payload: todoId
     })
   }
-
   var today = new Date();
   var time = today.getHours() + ":" + today.getMinutes();  
 

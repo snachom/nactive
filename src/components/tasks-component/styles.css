@@ -6,17 +6,22 @@
 }
 
 .col-tasks {
-  background-image: url(../../../public/assets/background/paper-p.png);
-  background-size: cover;
+  background-image: url(../../../public/assets/background/paper-cut.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: 60% 45%;
+  background-position: 10%;
   height: 100vh;
 }
 
 .tasks-wrapper {
   position: relative;
-  margin-top: 120px;
-  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 15% 10%;
+  /* margin-top: 145px;
+  margin-left: 250px; */
 }
 .tasks-wrapper h2, .tasks-wrapper small {
   font-family: 'Shadows Into Light', cursive;
@@ -72,7 +77,11 @@
   font-family: 'Shadows Into Light', cursive;
   border: 0;
 }
-
+@media (min-width: 600px) and (max-width: 990px) {
+  .tasks-wrapper {
+    margin: 30% 10%;
+  }
+}
 @media (min-width: 600px) {
   .todo-app-input, .btn-add {
     max-width: 100%;
@@ -105,7 +114,7 @@
     margin-bottom: 0;
   }
   .list-group {
-    padding-top: 30px;
+    padding-top: 0;
     padding-right: 0;
     width: 146px;
   }
@@ -114,11 +123,12 @@
     justify-content: flex-start;
     gap: 10px;
   }
-  .col-tasks .tasks-wrapper {
-    top: 10px;
-    left: 0;
-    margin-left: 70px;
-    font-size: 12px;
+  .tasks-wrapper {
+    margin: 20% 20%;
+  }
+  .todo-title {
+    position: initial;
+    border-bottom: 1px solid black;
   }
   .col-tasks button {
     font-size: 12px;

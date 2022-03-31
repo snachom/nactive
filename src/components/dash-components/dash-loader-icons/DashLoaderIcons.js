@@ -3,7 +3,7 @@ import './dash-loader-icons.css'
 
 export const DashLoaderIcons = () => {
   return (
-    <div className="dash-icons-loaders">
+    <div className="fblock dash-icons-loaders">
       <h2 className="loaders-title">SVG LODAING ICONS</h2>
       <div className="loaders-container">
         <div className="loader loader--style1" title="0">

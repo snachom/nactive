@@ -223,7 +223,12 @@
 	font-family: 'Ubuntu', sans-serif;
 	/* width: 950px; */
 }	
-@media (min-width: 600px) {
+.fblock {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (min-width: 900px) {
   .main-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -235,6 +240,60 @@
     height: 1600px;
     width: 1200px;
   }
+  .fblock {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+}
+@media (min-width: 600px) and (max-width: 991px) {
+
+  .dash-container { 
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .menu-box {
+    width: 98%;
+  }
+  .home-logout-wrapper {
+    max-width: 98%;
+  }
+  .calendar-month {
+    max-width: 98%;
+    margin-left: 10px;
+  }
+  .dash-construction {
+    margin-bottom: 30px;
+  }
+  .covid-news .tab-cov-content {
+    width: 661px;
+  }
+/*
+  .profile {
+    order: 2;
+  }
+
+  .dash-donut {
+    order: 4;
+  }
+  
+  .calendar-day {
+    order: 6;
+  }
+  .dash-line {
+    order: 7;
+  }
+  .weather {
+    order: 8;
+  }
+
+  .dash-icons-loaders {
+    order: 10;
+  }
+  .media {
+    order: 11;
+  }
+ */
 }
 
   

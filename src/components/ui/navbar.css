@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
+
 .navbar {
   margin-bottom: 20px;
   position: fixed;
@@ -7,11 +9,11 @@
   background-image: url('../../../public/assets/background/black.jpeg');
 }
 .navbar-brand {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Rock 3D', cursive;
   font-size: 25px;
 }
 .navbar-nav a {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Rock 3D', cursive;
   font-size: 18px;
 }
 
@@ -77,7 +79,7 @@
 
 .logout-wrapper button {
   padding: 7px 15px !important;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Rock 3D', cursive;
   font-size: 15px;
   letter-spacing: 2px;
   color: white !important;
@@ -85,7 +87,7 @@
 }
 
 .logout-wrapper span {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Rock 3D', cursive;
   font-size: 20px;
   letter-spacing: 2px;
   margin: 0 10px;
@@ -118,23 +120,23 @@
     color: black !important;
   }
   .navbar-brand {
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Rock 3D', cursive;
     font-size: 30px;
     letter-spacing: 2px;
   }
   .navbar-nav a {
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Rock 3D', cursive;
     font-size: 20px;
     letter-spacing: 2px;
   }
   .logout-wrapper button {
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Rock 3D', cursive;
     font-size: 18px;
     letter-spacing: 2px;
   }
   
   .logout-wrapper span {
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Rock 3D', cursive;
     font-size: 20px;
     letter-spacing: 2px;
   }

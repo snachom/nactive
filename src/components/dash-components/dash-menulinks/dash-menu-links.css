@@ -11,10 +11,16 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 94%;
   margin-bottom: 25px;
   border-radius: 5px;
 }
+@media (min-width: 600px) {
+  .menu-box {
+    width: 100%;
+  }
+}
+
 .menu-box .titular {
   background: #6CB9AD;
   border-bottom: 2px solid #008874;

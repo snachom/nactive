@@ -54,7 +54,7 @@
 }
 
 .tab-cov-content {
-  width: 300px;
+  width: 215px;
   height: 200px;
   position: absolute;
   display: flex;
@@ -62,6 +62,12 @@
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 600px) {
+  .tab-cov-content {
+    width: 300px;
+  }
+}
+
 .tab-cov-content h4 {
   font-size: 25px;
   font-weight: 300;
@@ -70,6 +76,10 @@
 .tab-cov-content p {
   font-size: 14px;
   margin-bottom: 0;
+}
+.cov-tab:hover {
+  background: white !important;
+  cursor: pointer;
 }
 .tab-cov-content:nth-child(2) {
   transform: translateZ(100px);
