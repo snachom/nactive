@@ -16,33 +16,41 @@
 }
 
 .gif-app-wrapper .app-title {
+  font-size: 3.5em;
   font-family: 'Bungee Shade', cursive;
-  margin-top: 0;
-  margin-bottom: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	align-content: center;
-	text-align: center;
-	font-weight: normal;
-	width: 100%;
-	text-align: center;
-	font-size: 11vw;
-	background: linear-gradient(
-		-45deg, 
-		#4bc0c8 25%, 
-		#ff993a 25%, 
-		#ff993a 50%, 
-		#4bc0c8 50%, 
-		#4bc0c8 75%, 
-		#ff993a 75%, 
-		#ff993a);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-size: 20px 20px;
-	background-position: 0 0;
-	animation: stripes 1s linear infinite;
+  color: rgb(255, 162, 0);
 }	
+
+@media (min-width: 600px) {
+  .gif-app-wrapper .app-title {
+    font-family: 'Bungee Shade', cursive;
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-weight: normal;
+    width: 100%;
+    text-align: center;
+    font-size: 11vw;
+    background: linear-gradient(
+      -45deg, 
+      #000000 25%, 
+      #ff993a 25%, 
+      #ff993a 50%, 
+      #000000 50%, 
+      #000000 75%, 
+      #ff993a 75%, 
+      #ff993a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 20px 20px;
+    background-position: 0 0;
+    animation: stripes 1s linear infinite;
+  }
+}
 
 @keyframes stripes {
 	100% { 
@@ -53,7 +61,7 @@
 .gif-app-wrapper ul { 
   margin-bottom: 0;
   margin-block-end: unset;
-  min-height: 50vh;
+  min-height: 80vh;
 }
 /* .app-title {
   margin: 0;

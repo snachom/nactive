@@ -1,6 +1,9 @@
 .search-name, .loader {
   text-align: center;
 }
+.gif-app-wrapper ul {
+  padding-left: 0;
+}
 
 .gif-app-wrapper h3 {
   font-size: 2em;
