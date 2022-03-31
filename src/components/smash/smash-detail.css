@@ -67,7 +67,7 @@
 }
 @media (max-width: 768px) {
   .avatarcontainer {
-    top: 28%;
+    top: 35%;
   }
 }
 .avatarcontainer:hover > .hover {
