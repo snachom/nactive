@@ -227,6 +227,9 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+.covid-news {
+  display: none;
+}
 
 @media (min-width: 900px) {
   .main-container {
@@ -244,7 +247,9 @@
     margin-left: 0;
     margin-right: 0;
   }
-
+  .covid-news {
+    display: block !important;
+  }
 }
 @media (min-width: 600px) and (max-width: 991px) {
 
@@ -264,6 +269,9 @@
   }
   .dash-construction {
     margin-bottom: 30px;
+  }
+  .covid-news {
+    display: block !important;
   }
   .covid-news .tab-cov-content {
     width: 661px;
